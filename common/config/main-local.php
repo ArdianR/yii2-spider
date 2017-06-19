@@ -3,7 +3,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=oppoit_spiderman',
+            'dsn' => 'mysql:host=54.179.131.7;dbname=oppoit_spiderman',
             'username' => 'oppoit_spiderman',
             'password' => 'atQ7wML84t',
             'charset' => 'utf8',
