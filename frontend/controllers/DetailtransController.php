@@ -126,14 +126,19 @@ class DetailtransController extends Controller
                             ->setSubject($model->subject)
                             ->setHtmlBody($model->body)
                             ->send();*/
-                        /*    Yii::getAlias('@app/web/mail/images/logo.png');
-                        Yii::$app->mailer->compose('layouts/clickme/index.php', [
+                        //    Yii::getAlias('@app/web/mail/images/logo.png');
+                        /*Yii::$app->mailer->compose('layouts/html.php', [
                             'imageFileName' => Yii::getAlias('@app/mail/layouts/clickme/images/logo.png'),
                             'facebook' => Yii::getAlias('@app/mail/layouts/clickme/images/facebook.png'),
                             'twitter' => Yii::getAlias('@app/mail/layouts/clickme/images/twitter.png'),
                             'pinterest' => Yii::getAlias('@app/mail/layouts/clickme/images/pinterest.png')
-                            ]) // a view rendering result becomes the message body here
-                        ->setFrom('suhendrii@outlook.com')
+                            ]) // a view rendering result becomes the message body here*/
+							if ($model->sendEmail(Yii::$app->params['supportEmail'])) {
+								Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+							} else {
+								Yii::$app->session->setFlash('error', 'There was an error sending your message.');
+							}
+                        /*->setFrom('suhendrii@outlook.com')
                         ->setTo($model->email)
                         ->setSubject('Message Test 3')
                         ->send();*/

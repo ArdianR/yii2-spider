@@ -75,6 +75,25 @@ class DetailTrans extends \yii\db\ActiveRecord
             'created_at' => 'Created At',
         ];
     }
+	
+	public function sendEmail($supportEmail)
+    {
+        $userSuccess = Yii::$app
+            ->mailer
+            ->compose(
+                ['html' => 'userFeedback-html', 'text' => 'userFeedback-text'],
+                [
+                    'email' => $this->email,
+                    'name'  => $this->name,
+                    'supportEmail' => $supportEmail,
+                ]
+            )
+            ->setFrom([$supportEmail => Yii::$app->params['siteName'] . ' bot'])
+            ->setTo($this->email)
+            ->setSubject('Than you for wrote review on ' . Yii::$app->params['siteName'])
+            ->send();
+        return $userSuccess;
+    }
 
     /**
      * @return \yii\db\ActiveQuery
