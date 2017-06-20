@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\ImeiSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Imeis';
+$this->title = 'IMEI';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="imei-index">
