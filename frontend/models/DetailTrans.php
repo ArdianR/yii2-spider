@@ -26,6 +26,8 @@ use Yii;
 class DetailTrans extends \yii\db\ActiveRecord
 {
     public $image;
+    public $name;
+    public $email;
     /**
      * @inheritdoc
      */
@@ -81,16 +83,19 @@ class DetailTrans extends \yii\db\ActiveRecord
         $userSuccess = Yii::$app
             ->mailer
             ->compose(
-                ['html' => 'userFeedback-html', 'text' => 'userFeedback-text'],
+                ['html' => 'newsletter/email1.php'],
+                //['html' => 'userFeedback-html', 'text' => 'userFeedback-text'],
                 [
+                    'imagebg' => Yii::getAlias('@common/mail/newsletter/image/bgnewsletter.jpg'),
                     'email' => $this->email,
                     'name'  => $this->name,
                     'supportEmail' => $supportEmail,
                 ]
             )
-            ->setFrom([$supportEmail => Yii::$app->params['siteName'] . ' bot'])
+            ->setFrom([$supportEmail => Yii::$app->params['siteName']])
             ->setTo($this->email)
-            ->setSubject('Than you for wrote review on ' . Yii::$app->params['siteName'])
+            //->setSubject('Than you for wrote review on ' . Yii::$app->params['siteName'])
+            ->setSubject('Terimakasih atas partisipasinya!')
             ->send();
         return $userSuccess;
     }

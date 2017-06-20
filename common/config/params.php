@@ -1,7 +1,7 @@
 <?php
 return [
     'adminEmail' => 'admin@example.com',
-    'supportEmail' => 'support@example.com',
+    'supportEmail' => 'no-reply@oppomobile.id',
     'user.passwordResetTokenExpire' => 3600,
-    'siteName' => 'Spiderman.oppomobile.id',
+    'siteName' => 'OPPO Indonesia',
 ];

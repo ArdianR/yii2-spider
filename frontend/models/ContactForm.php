@@ -48,7 +48,7 @@ class ContactForm extends Model
      * @param string $email the target email address
      * @return bool whether the email was sent
      */
-    public function sendEmail($email)
+    /*public function sendEmail($email)
     {
         return Yii::$app->mailer->compose()
             ->setTo($email)
@@ -56,5 +56,25 @@ class ContactForm extends Model
             ->setSubject($this->subject)
             ->setTextBody($this->body)
             ->send();
+    }*/
+
+    public function sendEmail($supportEmail)
+    {
+        $userSuccess = Yii::$app
+            ->mailer
+            ->compose(
+                ['html' => 'userFeedback-html', 'text' => 'userFeedback-text'],
+                [
+                    'email' => $this->email,
+                    'body'  => $this->body,
+                    'name'  => $this->name,
+                    'supportEmail' => $supportEmail,
+                ]
+            )
+            ->setFrom([$supportEmail => Yii::$app->params['siteName'] . ' bot'])
+            ->setTo($this->email)
+            ->setSubject('Than you for wrote review on ' . Yii::$app->params['siteName'])
+            ->send();
+        return $userSuccess;
     }
 }

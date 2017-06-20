@@ -31,6 +31,7 @@ class ImeicheckController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             $post = Yii::$app->request->post('CheckForm');
             $imeicheck = $post['imeicheck'];
+            $session['imei'] = $imeicheck;
             //var_dump($imeicheck);exit();
             $checking = (new \yii\db\Query())
                         ->select(['id_imei'])
