@@ -1,0 +1,108 @@
+<?php
+use yii\helpers\Html;
+/* @var $this yii\web\View */
+/* @var $name  string user name*/
+/* @var $email string user email */
+/* @var $body  string the review */
+use yii\web\Session;
+
+$session = Yii::$app->session;
+$session->open();
+?>
+<div class="m_-8456847885820307bodyContent" style="margin:0;padding:0;font-family:sans-serif">
+    
+    <p style="font-size:0px">OPPO F3</p>
+
+    
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background:#fff"><tbody><tr><td>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:10px 0 20px">
+            <tbody><tr><td></td></tr>
+            </tbody>
+        </table></td>
+        </tr><tr><td align="center" style="font-size:11px;color:#4f4f4f;padding:10px 0 20px">
+                Kesulitan melihat email? <a href="#" style="text-decoration:none;color:#42b549" target="_blank" data-saferedirecturl="#">Lihat di browser</a>
+            </td>
+        </tr><tr><td>
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse:collapse;background-color:#ffffff;color:#4f4f4f"><tbody><tr><td>
+                            <a href="http://trk.newsletter.tokopedia.com/em_eTEcXTQGtjTfnDikekOR/?uc=YwyNkL" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=http://trk.newsletter.tokopedia.com/em_eTEcXTQGtjTfnDikekOR/?uc%3DYwyNkL&amp;source=gmail&amp;ust=1497663548088000&amp;usg=AFQjCNHAHdMgY8maXNP62tZTSH0Hc-qo9Q"><img src="<?= $message->embed($imagebg); ?>" alt="Cashback s.d Rp100rb. Hari Terakhir!" class="CToWUd"></a>
+                        </td>
+                        
+                    </tr><tr><td>
+                            <div style="border-radius:4px;padding:1%"> 
+                                <div style="color:#505050;border-radius:4px;background:#fff;padding:10px 3% 10px 3%"><b class="m_-8456847885820307header">Hai, <?= $session['name']; ?>!</b><p></p>
+                                
+                                <p style="line-height:1.8em"><br><span style="display:inline-block;padding-bottom:20px;font-weight:bold"> Terima kasih data IMEI Anda sudah tersimpan dalam database kami!</span>
+
+                                <br>
+                              Anda berkesempatan mendapatkan hadiah atau gift atas pembelian OPPO F3 untuk periode bulan Mei - Juni 2017. 
+                                <br><br>
+          
+
+                     
+                    </p></div></div></td></tr><tr><td style="border-radius:4px;padding:1%"> 
+                            <div style="color:#505050;border-radius:4px;background:#fff;padding:10px 3% 10px 3%"> 
+                                <div align="center"> 
+                                    <div> 
+                                        <div style="display:inline-block;font-weight:bold;padding:20px 30px;color:#009b72;border:2px solid #e5e5e5;background-color:#ececec;margin:0px 10px 10px"> 
+
+                                        <div style="font-size:100%;display:block;padding-bottom:20px;color:#434343">IMEI Anda:</div>
+                                        <div style="font-size:200%"><?= Html::encode($session['imei']); ?></div>
+                                        </div> 
+                                        <!--<div style="font-size:80%;color:#999;padding-top:8px">Berlaku Hingga 31 Mei 2017
+                                        </div>-->
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </td>
+                    </tr><tr>
+                            </tr><tr align="center"><td style="padding:10px 18px;border-width:2px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background-color:#fcf3d0" id="m_-8456847885820307m_-3399913640788259468">
+                            <p class="m_-8456847885820307header" align="center" style="text-decoration:none;font-weight:700;color:#000">Pelajari Syarat dan Ketentuan:</p> 
+
+                            <ul style="text-align:left;list-style-type:disc;line-height:1.6em;padding:2% 7% 1%">
+                                <li style="margin-bottom:10px">Pastikan IMEI yang Anda masukan sudah benar</li> 
+                                <li style="margin-bottom:10px">Gift hanya berlaku pada periode pembelian bulan Mei - Juni 2017</li>
+                                 <li style="margin-bottom:10px">Pastikan IMEI yang Anda masukan sudah benar</li> 
+                                <li style="margin-bottom:10px">Gift hanya berlaku pada periode pembelian bulan Mei - Juni 2017</li>                               
+                                <li style="margin-bottom:10px">Pastikan IMEI yang Anda masukan sudah benar</li> 
+                                <li style="margin-bottom:10px">Gift hanya berlaku pada periode pembelian bulan Mei - Juni 2017</li>
+                               
+                            </ul><a rel="nofollow"></a> 
+                        </td> 
+                    </tr><tr>
+                                        </tr><tr>
+                </tr><tr><td style="padding:30px 30px;background-color:#fff">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;font-size:13px;color:#999999"><tbody><tr><td>
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse"><tbody><tr><td width="240" align="left">
+                                                 
+                                                <td width="280" align="right">
+                                                    <table border="0" style="border-collapse:collapse"><tbody><tr><td style="font-size:13px;color:#000;padding-bottom:10px" align="right">Ikuti Kami</td>
+                                                        </tr><tr><td style="padding:2px"></td>
+                                                        </tr><tr><td>
+                                                                <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse"><tbody><tr><td>
+                                                                            <a href="#" style="padding:0 5px" target="_blank" data-saferedirecturl="#"><img src="https://ci4.googleusercontent.com/proxy/pfkqXQG2UPncmlrEG71hEggSGSuSKHe2WPRC5vFBp2zz89ImAnnqpuHtRSfgc5a-vPfxYKQ4dw7gv1FGlEPSIdbdt-7aAS_aAY3kB6IB-EavzTD0UuSz=s0-d-e1-ft#https://d39sghb3udgxv0.cloudfront.net/300452017/05/1495112422.jpg" style="border-radius:3px" alt="Line" height="40" class="CToWUd"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="#" style="padding:0 5px" target="_blank" data-saferedirecturl="#"><img src="https://ci3.googleusercontent.com/proxy/TL2aWzcuExbXf3EGgD4hhxN1OgBoO900bJFXeHL9RPOV5enqM0muRFAcmFQQb95MNv3VlbyEZud3OCZtLBFlL_uvglTqC6fs2yS3u_qQ6S13LkgOz8L0Udb7p_ez=s0-d-e1-ft#https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307802.png" alt="Google plus" height="40" class="CToWUd"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="#" style="padding:0 5px" target="_blank" data-saferedirecturl="#"><img src="https://ci6.googleusercontent.com/proxy/hpkmiDtehvMUkzI6NQ6XxbIyirGT45tdKbdIzboposYocCcs_dWmXX3aNbXt8ROnlJvo8CA6LphY5vLGZcKuOk02xDtOMbqED9SbOrrgqeUuIgxqlnlAtza2iLFy=s0-d-e1-ft#https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307762.png" alt="Facebook" height="40" class="CToWUd"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="#" style="padding:0 5px" target="_blank" data-saferedirecturl="#"><img src="https://ci3.googleusercontent.com/proxy/GIsQ666UaY-N1YHMNhXRYjUTObALsZDyqQ51u2t8uFNXI1TlYtWJ4-1fQrLdutgnyNgM9qu43Ang9jKuZ38oUrCBsSD4YPslXDPvP6scSXyIJmyQ6VTB2c0aGVlw=s0-d-e1-ft#https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307869.png" alt="Twitter" height="40" class="CToWUd"></a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <a href="#" style="padding:0 0 0 5px" target="_blank" data-saferedirecturl="#"><img src="https://ci4.googleusercontent.com/proxy/JOX0gbWvJ4vDUCHPWyne4LMiRgkAfgnuTnWfu68HnovFepHvdjChQ7hrOSwMbKA53IPW0Xd3XS1I-Q8amoGXRxNvRMDCnO4GVAH2coMKT0cn2QMu6FMiENJXzfMM=s0-d-e1-ft#https://s3.amazonaws.com/www.betaoutcdn.com/300452016/11/1480307832.png" alt="Instagram" height="40" class="CToWUd"></a>
+                                                                        </td>
+                                                                    </tr></tbody></table></td>
+                                                        </tr></tbody></table></td>
+                                            </tr></tbody></table></td>
+                                </tr></tbody></table></td>
+                    </tr><tr><td>
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%" style="border-collapse:collapse;background-color:#f7f7f7;font-size:13px;color:#999999;border-top:1px solid #dddddd"><tbody><tr><td width="560" align="center" style="padding:30px 20px 0">
+                                        <a href="#" style="text-decoration:none;color:#009b72" target="_blank" data-saferedirecturl="#">Hubungi Kami</a> | <a href="#" style="text-decoration:none;color:#009b72" target="_blank" data-saferedirecturl="#">Syarat &amp; Ketentuan</a> | <a href="#" style="text-decoration:none;color:#009b72" target="_blank" data-saferedirecturl="#">Kebijakan Privasi</a> | <a href="#" style="text-decoration:none;color:#009b72" target="_blank" data-saferedirecturl="#">Unsubscribe</a>
+                                    </td>
+                                </tr><tr><td width="560" align="center" style="padding:10px 20px 30px"> &copy; 2017, OPPO Indonesia
+                                    </td>
+                                </tr></tbody></table></td>
+                    </tr></tbody></table></td>
+        </tr></tbody></table><img alt="" src="https://ci4.googleusercontent.com/proxy/a2lwB-Xse10V-GE_rwO7EVCKH_1_Pl7DrhTIcI695ZuJZ1U47PF1fadN2zH0reEbD6w0YhCNSdAarmcyaxYKVE9HXeBenylR88kYtMZ5dPrNjHfWfqI6TII=s0-d-e1-ft#http://trk.newsletter.tokopedia.com/o/nv/c/eTEcXTQGtjTfnDikekOR.gif" class="CToWUd"></div>
