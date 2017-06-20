@@ -7,6 +7,12 @@ return [
             'username' => 'oppoit_spiderman',
             'password' => 'atQ7wML84t',
             'charset' => 'utf8',
+			
+			/*'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=spiderman',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',*/
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
@@ -14,7 +20,14 @@ return [
             // send all mails to a file by default. You have to set
             // 'useFileTransport' to false and configure a transport
             // for the mailer to send real emails.
-            'useFileTransport' => true,
+            'useFileTransport' => false,
+			'transport' => [
+                   'class' => 'Swift_SmtpTransport',
+                   'host' => 'smtp.elasticemail.com',
+                   'username' => 'oppoitbrand@gmail.com',
+                   'password' => '1f216cb2-f0ee-4796-8404-070536354606',
+                   'port' => '2525',
+             ],
         ],
     ],
 ];
