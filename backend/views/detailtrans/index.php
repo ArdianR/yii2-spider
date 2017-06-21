@@ -1,25 +1,24 @@
 <?php
-
-use yii\helpers\Html;
-use kartik\dynagrid\DynaGrid;
-use kartik\grid\GridView;
-// FileInput inside a modal dialog
 use yii\bootstrap\Modal;
 use kartik\widgets\ActiveForm;
 use kartik\widgets\FileInput;
-
+//Aditiional Namespace
+// FileInput inside a modal dialog
+use yii\helpers\Html;
+use kartik\dynagrid\DynaGrid;
+use kartik\grid\GridView;
 
 $this->title = 'Detail Trans';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="detail-trans-index">
 
-    
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
         <?= Html::a('Create Detail Trans', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+	
 <?php
 $columns = [
     ['class'=>'kartik\grid\SerialColumn', 'order'=>DynaGrid::ORDER_FIX_LEFT],
@@ -47,7 +46,17 @@ $columns = [
                 ['width' => '60px']);
         },        
     ],
-    'created_at',
+    //'created_at',
+	[
+        'attribute'=>'created_at',
+        'filterType'=>GridView::FILTER_DATE,
+        'format'=>'raw',
+        'width'=>'170px',
+        'filterWidgetOptions'=>[
+            'pluginOptions'=>['format'=>'yyyy-mm-dd']
+        ],
+	],
+	
     /*[
         'class'=>'kartik\grid\BooleanColumn',
         'attribute'=>'status',
@@ -56,8 +65,28 @@ $columns = [
     [
         'class'=>'kartik\grid\ActionColumn',
         'dropdown'=>false,
-        'order'=>DynaGrid::ORDER_FIX_RIGHT
+        'order'=>DynaGrid::ORDER_FIX_RIGHT,
+		'vAlign'=>'middle',
+		'template' => '{view} {update} {delete} {approve}',
+		//'urlCreator' => function($action, $model, $key, $index) { 
+		//				return Url::to([$action,'id'=>$key]);
+		//				},
+		'buttons'=>[
+        //'approve' => function ($url, $model, $key) {
+		//		return Html::a('<span class="glyphicon glyphicon-copy"></span>', ['approve', 'id'=>$model->id],['title'=>'Approve']);
+		//		},
+		'viewOptions'=>['role'=>'modal-remote','title'=>'View','data-toggle'=>'tooltip'],
+		'updateOptions'=>['role'=>'modal-remote','title'=>'Update', 'data-toggle'=>'tooltip'],
+		'deleteOptions'=>['role'=>'modal-remote','title'=>'Delete', 
+                      'data-confirm'=>false, 'data-method'=>false,// for overide yii data api
+                      'data-request-method'=>'post',
+                      'data-toggle'=>'tooltip',
+                      'data-confirm-title'=>'Are you sure?',
+                      'data-confirm-message'=>'Are you sure want to delete this item'],
+		
+    ],      
     ],
+	//Multiple Checklist Disabled
     //['class'=>'kartik\grid\CheckboxColumn', 'order'=>DynaGrid::ORDER_FIX_RIGHT],
 ];
 
