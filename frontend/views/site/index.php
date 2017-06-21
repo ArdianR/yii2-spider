@@ -2,7 +2,9 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'OPPO - Spiderman Homecoming';
+$this->registerMetaTag(['name' => 'description', 'content' => 'OPPO Spiderman Homecoming'], 'description');
+$this->registerMetaTag(['name' => 'keywords', 'content' => 'OPPO, Spiderman, HomeComing, OPPO Indonesia, OPPO F3 Spiderman']);
 ?>
 <div class="site-index">
 

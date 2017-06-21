@@ -59,5 +59,7 @@ class Imei extends \yii\db\ActiveRecord
         return $this->hasMany(DetailTrans::className(), ['id_imei' => 'id_imei']);
     }
 	
-	//public $imeiCount;
+	public $imeicount;
+	public $imeiwarehouse;
+	public $imeisold;
 }

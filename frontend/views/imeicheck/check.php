@@ -14,7 +14,7 @@ $form = ActiveForm::begin([
 
 ?>
 	<?php echo $form->errorSummary($model); ?>
-    <?= $form->field($model, 'imeicheck')->textInput(['maxlength' => true, 'type' => 'number']) ?>
+    <?= $form->field($model, 'imeicheck')->textInput(['maxlength' => true, 'type' => 'number'])->hint('Diisi dengan 15 angka IMEI anda') ?>
 
     <div class="form-group">
         <div class="col-lg-offset-1 col-lg-11">
