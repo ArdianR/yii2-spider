@@ -39,7 +39,7 @@ class DetailTransSearch extends DetailTrans
      *
      * @return ActiveDataProvider
      */
-    public function search($params)
+    /*public function search($params)
     {
         $query = DetailTrans::find();
 
@@ -74,6 +74,43 @@ class DetailTransSearch extends DetailTrans
             ->andFilterWhere(['like', 'path_src', $this->path_src])
             ->andFilterWhere(['like', 'path_web', $this->path_web]);
 
+        return $dataProvider;
+    }*/
+    public function search($params)
+    {
+        $query = DetailTrans::find();
+     
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+            'pagination' => [
+                'pagesize' => 10 // in case you want a default pagesize
+            ]
+        ]);
+     
+        // The following condition is important and must be changed. The $_GET validation
+        // is important (or you can use $_POST if you have configured post method).
+        // Without this validation saved filters cannot be applied.
+        if (isset($_GET['DetailTransSearch']) && !($this->load($params) && $this->validate())) {
+            return $dataProvider;
+        }
+     
+        // the other part below can be as per the default gii code or whatever you need
+        $query->andFilterWhere([
+            'id_trans' => $this->id_trans,
+            'id_imei' => $this->id_imei,
+            'status' => $this->status,
+            'stat_email1' => $this->stat_email1,
+            'stat_email2' => $this->stat_email2,
+            'created_at' => $this->created_at,
+        ]);
+     
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'address', $this->address])
+            ->andFilterWhere(['like', 'phone', $this->phone])
+            ->andFilterWhere(['like', 'email', $this->email])
+            ->andFilterWhere(['like', 'path_src', $this->path_src])
+            ->andFilterWhere(['like', 'path_web', $this->path_web]);
+     
         return $dataProvider;
     }
 }

@@ -3,6 +3,12 @@
 namespace app\models;
 
 use Yii;
+use yii\db\ActiveRecord;
+use yii\web\UploadedFile;
+use app\models\CustomerDetail;
+
+Yii::$app->params['uploadPath'] = Yii::$app->basePath . '/../uploads/';
+Yii::$app->params['uploadUrl'] = Yii::$app->urlManager->baseUrl . '/../uploads/';
 
 /**
  * This is the model class for table "detail_trans".
