@@ -1,0 +1,856 @@
+2017-06-20 20:40:50 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 50063 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-20 20:40:50 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf-backend' => 'edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ÜjÛÅ¼DØŒ)Â.v²àÅ©Þp˜?ûðBÑO…\";}'
+    'advanced-backend' => '36jlt4eairrrcd5otnes3qv8i5'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%DCj%DB%C5%0F%BCD%D8%1E%8C%29%12%C2.v%B2%E0%C5%A9%DEp%98%3F%8F%FB%0D%F0B%18%D1O%85%22%3B%7D; advanced-backend=36jlt4eairrrcd5otnes3qv8i5; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ADITIYA\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '55837'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497984050.001
+    'REQUEST_TIME' => 1497984050
+]
+2017-06-20 20:40:54 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 50063 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-20 20:40:54 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ÜjÛÅ¼DØŒ)Â.v²àÅ©Þp˜?ûðBÑO…\";}'
+    'advanced-backend' => '36jlt4eairrrcd5otnes3qv8i5'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+    'advanced-frontend' => '80fvb2c40ag3hhqtl57oq1ngp3'
+    '_csrf-frontend' => '5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cîžž#íÊ•v¦{ær†½cTytö	EêÏ®\'ÝZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%DCj%DB%C5%0F%BCD%D8%1E%8C%29%12%C2.v%B2%E0%C5%A9%DEp%98%3F%8F%FB%0D%F0B%18%D1O%85%22%3B%7D; advanced-backend=36jlt4eairrrcd5otnes3qv8i5; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D; advanced-frontend=80fvb2c40ag3hhqtl57oq1ngp3; _csrf-frontend=5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22c%EE%9E%9E%23%ED%CA%16%95v%A6%7B%E6r%18%86%0C%BDcTyt%F6%09%0CE%EA%CF%AE%27%DDZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ADITIYA\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '55839'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497984054.801
+    'REQUEST_TIME' => 1497984054
+]
+2017-06-20 20:41:05 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 50063 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-20 20:41:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'imeicheck/check'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ÜjÛÅ¼DØŒ)Â.v²àÅ©Þp˜?ûðBÑO…\";}'
+    'advanced-backend' => '36jlt4eairrrcd5otnes3qv8i5'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+    'advanced-frontend' => '80fvb2c40ag3hhqtl57oq1ngp3'
+    '_csrf-frontend' => '5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cîžž#íÊ•v¦{ær†½cTytö	EêÏ®\'ÝZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%DCj%DB%C5%0F%BCD%D8%1E%8C%29%12%C2.v%B2%E0%C5%A9%DEp%98%3F%8F%FB%0D%F0B%18%D1O%85%22%3B%7D; advanced-backend=36jlt4eairrrcd5otnes3qv8i5; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D; advanced-frontend=80fvb2c40ag3hhqtl57oq1ngp3; _csrf-frontend=5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22c%EE%9E%9E%23%ED%CA%16%95v%A6%7B%E6r%18%86%0C%BDcTyt%F6%09%0CE%EA%CF%AE%27%DDZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ADITIYA\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '55843'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497984065.509
+    'REQUEST_TIME' => 1497984065
+]
+2017-06-20 20:41:11 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 50063 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-20 20:41:10 [::1][-][-][info][application] $_GET = [
+    'r' => 'imeicheck/check'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'FSuLaRysYMiKSPBH8A0fDhQiEN2y2okbGrUtcEKRmRN2xRX3P0Gq3h8-VjwWfweIGJ9zicuufxIW8Me_7LZESQ=='
+    'CheckForm' => [
+        'imeicheck' => '21313'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ÜjÛÅ¼DØŒ)Â.v²àÅ©Þp˜?ûðBÑO…\";}'
+    'advanced-backend' => '36jlt4eairrrcd5otnes3qv8i5'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+    'advanced-frontend' => '80fvb2c40ag3hhqtl57oq1ngp3'
+    '_csrf-frontend' => '5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cîžž#íÊ•v¦{ær†½cTytö	EêÏ®\'ÝZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'flashMessage' => 1
+    ]
+    'imei' => '21313'
+    'flashMessage' => 'Imei yang anda masukkan tidak terdaftar!'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '138'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%DCj%DB%C5%0F%BCD%D8%1E%8C%29%12%C2.v%B2%E0%C5%A9%DEp%98%3F%8F%FB%0D%F0B%18%D1O%85%22%3B%7D; advanced-backend=36jlt4eairrrcd5otnes3qv8i5; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D; advanced-frontend=80fvb2c40ag3hhqtl57oq1ngp3; _csrf-frontend=5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22c%EE%9E%9E%23%ED%CA%16%95v%A6%7B%E6r%18%86%0C%BDcTyt%F6%09%0CE%EA%CF%AE%27%DDZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ADITIYA\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '55847'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497984070.964
+    'REQUEST_TIME' => 1497984070
+]
+2017-06-20 20:41:16 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 50063 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-20 20:41:16 [::1][-][-][info][application] $_GET = [
+    'r' => 'imeicheck/check'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'FKdY51OgXaZUSQIA4dQIaFoX2Ai7ZlwuWzQ32Y39_MZ3ScZ5cE2XsME_pHsHphDuVqq7XMISqidXcd0WI9ohnA=='
+    'CheckForm' => [
+        'imeicheck' => '321313131231'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ÜjÛÅ¼DØŒ)Â.v²àÅ©Þp˜?ûðBÑO…\";}'
+    'advanced-backend' => '36jlt4eairrrcd5otnes3qv8i5'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+    'advanced-frontend' => '80fvb2c40ag3hhqtl57oq1ngp3'
+    '_csrf-frontend' => '5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cîžž#íÊ•v¦{ær†½cTytö	EêÏ®\'ÝZ\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'flashMessage' => 1
+    ]
+    'imei' => '321313131231'
+    'flashMessage' => 'Imei yang anda masukkan tidak terdaftar!'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '145'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%DCj%DB%C5%0F%BCD%D8%1E%8C%29%12%C2.v%B2%E0%C5%A9%DEp%98%3F%8F%FB%0D%F0B%18%D1O%85%22%3B%7D; advanced-backend=36jlt4eairrrcd5otnes3qv8i5; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D; advanced-frontend=80fvb2c40ag3hhqtl57oq1ngp3; _csrf-frontend=5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22c%EE%9E%9E%23%ED%CA%16%95v%A6%7B%E6r%18%86%0C%BDcTyt%F6%09%0CE%EA%CF%AE%27%DDZ%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ADITIYA\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '55853'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497984076.132
+    'REQUEST_TIME' => 1497984076
+]
+2017-06-20 20:49:08 [::1][-][80fvb2c40ag3hhqtl57oq1ngp3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 50063 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-20 20:49:08 [::1][-][80fvb2c40ag3hhqtl57oq1ngp3][info][application] $_GET = [
+    'r' => 'imeicheck/check'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'l6jvEItftwCXQwygpng8DFf1maC7Ifr1Q8SIYRc34N30RnGOqLJ9FgI1qttACiSKW0j69MJVDPxPgWKuuRA9hw=='
+    'CheckForm' => [
+        'imeicheck' => '865249030547597'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ÜjÛÅ¼DØŒ)Â.v²àÅ©Þp˜?ûðBÑO…\";}'
+    'advanced-backend' => '36jlt4eairrrcd5otnes3qv8i5'
+    'advanced-frontend' => '80fvb2c40ag3hhqtl57oq1ngp3'
+    '_csrf-frontend' => '5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cîžž#íÊ•v¦{ær†½cTytö	EêÏ®\'ÝZ\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'imei' => '865249030547597'
+    'idimei' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '148'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%DCj%DB%C5%0F%BCD%D8%1E%8C%29%12%C2.v%B2%E0%C5%A9%DEp%98%3F%8F%FB%0D%F0B%18%D1O%85%22%3B%7D; advanced-backend=36jlt4eairrrcd5otnes3qv8i5; advanced-frontend=80fvb2c40ag3hhqtl57oq1ngp3; _csrf-frontend=5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22c%EE%9E%9E%23%ED%CA%16%95v%A6%7B%E6r%18%86%0C%BDcTyt%F6%09%0CE%EA%CF%AE%27%DDZ%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ADITIYA\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '55903'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497984548.172
+    'REQUEST_TIME' => 1497984548
+]
+2017-06-20 20:49:09 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 50063 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-20 20:49:08 [::1][-][-][info][application] $_GET = [
+    'r' => 'detailtrans/create'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ÜjÛÅ¼DØŒ)Â.v²àÅ©Þp˜?ûðBÑO…\";}'
+    'advanced-backend' => '36jlt4eairrrcd5otnes3qv8i5'
+    '_csrf-frontend' => '5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cîžž#íÊ•v¦{ær†½cTytö	EêÏ®\'ÝZ\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+    'advanced-frontend' => '80fvb2c40ag3hhqtl57oq1ngp3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'imei' => '865249030547597'
+    'idimei' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%DCj%DB%C5%0F%BCD%D8%1E%8C%29%12%C2.v%B2%E0%C5%A9%DEp%98%3F%8F%FB%0D%F0B%18%D1O%85%22%3B%7D; advanced-backend=36jlt4eairrrcd5otnes3qv8i5; _csrf-frontend=5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22c%EE%9E%9E%23%ED%CA%16%95v%A6%7B%E6r%18%86%0C%BDcTyt%F6%09%0CE%EA%CF%AE%27%DDZ%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D; advanced-frontend=80fvb2c40ag3hhqtl57oq1ngp3'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ADITIYA\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '55903'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=detailtrans%2Fcreate'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=detailtrans%2Fcreate'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497984548.424
+    'REQUEST_TIME' => 1497984548
+]
+2017-06-20 20:49:11 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 50063 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-20 20:49:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf-backend' => 'edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ÜjÛÅ¼DØŒ)Â.v²àÅ©Þp˜?ûðBÑO…\";}'
+    'advanced-backend' => '36jlt4eairrrcd5otnes3qv8i5'
+    '_csrf-frontend' => '5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cîžž#íÊ•v¦{ær†½cTytö	EêÏ®\'ÝZ\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+    'advanced-frontend' => '80fvb2c40ag3hhqtl57oq1ngp3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'imei' => '865249030547597'
+    'idimei' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php?r=detailtrans%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%DCj%DB%C5%0F%BCD%D8%1E%8C%29%12%C2.v%B2%E0%C5%A9%DEp%98%3F%8F%FB%0D%F0B%18%D1O%85%22%3B%7D; advanced-backend=36jlt4eairrrcd5otnes3qv8i5; _csrf-frontend=5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22c%EE%9E%9E%23%ED%CA%16%95v%A6%7B%E6r%18%86%0C%BDcTyt%F6%09%0CE%EA%CF%AE%27%DDZ%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D; advanced-frontend=80fvb2c40ag3hhqtl57oq1ngp3'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ADITIYA\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '55908'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497984551.855
+    'REQUEST_TIME' => 1497984551
+]
+2017-06-20 20:49:12 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 50063 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-20 20:49:12 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf-backend' => 'edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ÜjÛÅ¼DØŒ)Â.v²àÅ©Þp˜?ûðBÑO…\";}'
+    'advanced-backend' => '36jlt4eairrrcd5otnes3qv8i5'
+    '_csrf-frontend' => '5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cîžž#íÊ•v¦{ær†½cTytö	EêÏ®\'ÝZ\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+    'advanced-frontend' => '80fvb2c40ag3hhqtl57oq1ngp3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'imei' => '865249030547597'
+    'idimei' => '1'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%DCj%DB%C5%0F%BCD%D8%1E%8C%29%12%C2.v%B2%E0%C5%A9%DEp%98%3F%8F%FB%0D%F0B%18%D1O%85%22%3B%7D; advanced-backend=36jlt4eairrrcd5otnes3qv8i5; _csrf-frontend=5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22c%EE%9E%9E%23%ED%CA%16%95v%A6%7B%E6r%18%86%0C%BDcTyt%F6%09%0CE%EA%CF%AE%27%DDZ%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D; advanced-frontend=80fvb2c40ag3hhqtl57oq1ngp3'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ADITIYA\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '55910'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497984552.78
+    'REQUEST_TIME' => 1497984552
+]
+2017-06-20 20:49:18 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 50063 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-20 20:49:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/contact'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ÜjÛÅ¼DØŒ)Â.v²àÅ©Þp˜?ûðBÑO…\";}'
+    'advanced-backend' => '36jlt4eairrrcd5otnes3qv8i5'
+    '_csrf-frontend' => '5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cîžž#íÊ•v¦{ær†½cTytö	EêÏ®\'ÝZ\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+    'advanced-frontend' => '80fvb2c40ag3hhqtl57oq1ngp3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'imei' => '865249030547597'
+    'idimei' => '1'
+    '__captcha/site/captcha' => 'jumnei'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%DCj%DB%C5%0F%BCD%D8%1E%8C%29%12%C2.v%B2%E0%C5%A9%DEp%98%3F%8F%FB%0D%F0B%18%D1O%85%22%3B%7D; advanced-backend=36jlt4eairrrcd5otnes3qv8i5; _csrf-frontend=5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22c%EE%9E%9E%23%ED%CA%16%95v%A6%7B%E6r%18%86%0C%BDcTyt%F6%09%0CE%EA%CF%AE%27%DDZ%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D; advanced-frontend=80fvb2c40ag3hhqtl57oq1ngp3'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ADITIYA\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '55911'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcontact'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=site%2Fcontact'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497984558.104
+    'REQUEST_TIME' => 1497984558
+]
+2017-06-20 20:49:18 [::1][-][80fvb2c40ag3hhqtl57oq1ngp3][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 50063 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-20 20:49:18 [::1][-][80fvb2c40ag3hhqtl57oq1ngp3][info][application] $_GET = [
+    'r' => 'site/captcha'
+    'v' => '59496e2e46528'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ÜjÛÅ¼DØŒ)Â.v²àÅ©Þp˜?ûðBÑO…\";}'
+    'advanced-backend' => '36jlt4eairrrcd5otnes3qv8i5'
+    '_csrf-frontend' => '5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"cîžž#íÊ•v¦{ær†½cTytö	EêÏ®\'ÝZ\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+    'advanced-frontend' => '80fvb2c40ag3hhqtl57oq1ngp3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'imei' => '865249030547597'
+    'idimei' => '1'
+    '__captcha/site/captcha' => 'jumnei'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php?r=site%2Fcontact'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=edb5a0af8afe9f679835f45712b0e24e3e79b08c6a1604609e0cd72d05051619a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%DCj%DB%C5%0F%BCD%D8%1E%8C%29%12%C2.v%B2%E0%C5%A9%DEp%98%3F%8F%FB%0D%F0B%18%D1O%85%22%3B%7D; advanced-backend=36jlt4eairrrcd5otnes3qv8i5; _csrf-frontend=5d3bcb2e2f6469caf590aa1290453cba6e57e79dada7c34b9b75658204365366a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22c%EE%9E%9E%23%ED%CA%16%95v%A6%7B%E6r%18%86%0C%BDcTyt%F6%09%0CE%EA%CF%AE%27%DDZ%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D; advanced-frontend=80fvb2c40ag3hhqtl57oq1ngp3'
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\Skype\\Phone\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ADITIYA\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '55911'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcaptcha&v=59496e2e46528'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=site%2Fcaptcha&v=59496e2e46528'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497984558.345
+    'REQUEST_TIME' => 1497984558
+]
