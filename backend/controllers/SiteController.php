@@ -6,6 +6,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\LoginForm;
+use app\models\Imei;
 
 /**
  * Site controller
@@ -60,7 +61,20 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+		$imeicount = Imei::find()
+			->count();
+		$imeiwarehouse = Imei::find()
+			->where(['warehouse' => 1])
+			->count();
+		$imeisold = Imei::find()
+			->where(['sold' => 1])
+			->count();
+        return $this->render('index',[
+								'imeicount'=>$imeicount,
+								'imeiwarehouse'=>$imeiwarehouse,
+								'imeisold'=>$imeisold,
+								
+							]);
     }
 
     /**
