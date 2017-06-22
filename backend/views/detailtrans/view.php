@@ -43,7 +43,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'stat_email2:email',
             'created_at',
             [
-<<<<<<< HEAD
             'attribute' => 'path_web',
             'format' => 'html',
             'label' => 'Photo',
@@ -52,18 +51,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     ['width' => '300px']);
                     },        
                 ],
-            ],
-=======
-                'attribute' => 'path_web',
-                'format' => 'html',
-                'label' => 'Photo',
-                'value' => function ($data) {
-                    return Html::img('../../uploads/' . $data['path_web'],
-                        ['width' => '300px']);
-                },        
-            ],
-        ],
->>>>>>> 2b234dd6ad7baef33f40ccf5a5012335cd2e3ebb
-    ]) ?>
+            ],      
+        ]) ?>
 
 </div>

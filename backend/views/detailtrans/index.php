@@ -23,11 +23,12 @@ $this->params['breadcrumbs'][] = $this->title;
 $columns = [
     ['class'=>'kartik\grid\SerialColumn', 'order'=>DynaGrid::ORDER_FIX_LEFT],
     'id_trans',
+    'id_imei',
     'name',
     'address',
     'phone',
     'email:email',
-    'path_src',
+    //'path_src',
     /*[
         'attribute'=>'publish_date',
         'filterType'=>GridView::FILTER_DATE,
