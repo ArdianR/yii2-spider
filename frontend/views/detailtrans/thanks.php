@@ -158,20 +158,10 @@ padding-right:0px !important;
  
 <?php $this->registerJsFile('form/js/jquery-1.11.1.min.js', ['position' => \yii\web\View::POS_HEAD]); ?>
 <?php $this->registerJsFile('form/js/bootstrap.min.js', ['position' => \yii\web\View::POS_HEAD]); ?>
-
-
-
 <?php $session = Yii::$app->session;
       $session->destroy();
 ?>
- 
-
-
-                
-
-
-
-     <!-- begin:modal imei -->
+      <!-- begin:modal imei -->
     <div class="modal-foto modal fade" id="modalimei" tabindex="-1" role="dialog" aria-hidden="true" style="padding-right:0 !important;">
       <div class="modal-content">
         <!--<div class="modal-close" data-dismiss="modal"></div>-->
