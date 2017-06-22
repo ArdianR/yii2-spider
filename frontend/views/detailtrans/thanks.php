@@ -161,7 +161,9 @@ padding-right:0px !important;
 
 
 
-
+<?php $session = Yii::$app->session;
+      $session->destroy();
+?>
  
 
 
