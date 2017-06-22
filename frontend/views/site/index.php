@@ -145,7 +145,7 @@
 						<div class="row"> 
 							<div class="col-md-7 center-col"> 
 								<div class="video wow slideInUp" data-wow-delay="0.2s"> 
-									<a href="https://www.youtube.com/watch?v=PsjFbwIQ8AY" class="play-btn video-popup"><img src="spiderman/img/assets/play-btn.png" alt="" /></a> 
+									<a href="https://youtu.be/ESDJxqeo2pM" class="play-btn video-popup"><img src="spiderman/img/assets/play-btn.png" alt="" /></a> 
 									<h1 class="mtb-25 text-white text-uppercase" style="text-shadow: 2px 2px #000;">Watch video</h1> 
 								</div> 
 							</div> 

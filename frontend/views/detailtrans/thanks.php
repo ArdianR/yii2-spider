@@ -262,18 +262,8 @@ Semoga beruntung! </h5>
 				    </div>
                 </div>	
 			</form>
-			<?php
-				if($_POST)
-				{
-					if(!isset($_POST['setuju'])) {
-					   echo "<script>alert('Syarat dan Ketentuan Harus Disetujui!');document.getElementById('popup').style.display='block';document.getElementById('popupbg').style.display='block';</script>";
-					}
-					else
-					{
-						echo "<form action='index.php?r=imeicheck/check' id='formtnc' method='post' class='btn btn-lucky'><input type='hidden' name='src' value='tnc'/></form><script>document.getElementById('formtnc').submit();</script>"; 
-					}
-				}
-			?>                
+
+			                
                 
                 <!--<button type="button" class="btn btn-lucky" data-dismiss="modal" style="color:#FFF;"> &radic; SETUJU </button>-->
               </div>
