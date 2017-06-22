@@ -74,6 +74,27 @@ class DetailtransController extends Controller
         }
     }
 
+    public function actionApprove($id)
+    {
+        $model = $this->findModel($id);
+
+        if ($model->load(Yii::$app->request->post())) {
+            if ($model->sendEmail(Yii::$app->params['supportEmail'])) {
+                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+            } else {
+                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
+            }
+        
+        //Update status email
+        $connection = Yii::$app->db;
+        $connection->createCommand()->update('detail_trans', ['stat_email1' => 2], 'phone ='.$phone)->execute();
+        } else {
+            return $this->render('update', [
+                'model' => $model,
+            ]);
+        }
+    }
+
     /**
      * Updates an existing DetailTrans model.
      * If update is successful, the browser will be redirected to the 'view' page.
