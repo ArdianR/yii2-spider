@@ -5066,6 +5066,182 @@ $_SERVER = [
     'REQUEST_TIME' => 1498119523
 >>>>>>> a895c4b959c34e75f601df44a0dbd7b5c1cf7086
 ]
+<<<<<<< HEAD
+2017-06-22 13:44:21 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 25061 bytes' 
+
+in C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 88, Array)
+#1 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-22 13:44:21 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'n1s88elce2u6na06v7nposuac3'
+    '_csrf-frontend' => '91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"z-“∞=1$≤u√AˆPJé Ü=ƒ∞øà,kv˚∞uÍ\";}'
+    'advanced-backend' => 'iv6au1tiaahqnjpa9nqmtln4u3'
+    '_csrf-backend' => '633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Ûÿ]‹µîeA
+–\'·xäiìí’€¢ˇ˚KFçFj\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'flashMessage' => 1
+    ]
+    'imei' => '865249030347618'
+    'idimei' => '24'
+    'name' => 'suhendri'
+    'email' => 'suhendri.mardiyanto@gmail.com'
+    'address' => 'Jl. Johar Baru Utara V No.1, Jakarta Pusat, DKI Jakarta'
+    'phone' => '081371252919'
+    'flashMessage' => 'Sukses, data anda benar!'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=n1s88elce2u6na06v7nposuac3; _csrf-frontend=91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22z-%D2%B0%3D1%24%B2u%0C%C3A%F6PJ%8E%0E%CA%86%3D%C4%B0%BF%88%2Ckv%12%FB%B0u%EA%22%3B%7D; advanced-backend=iv6au1tiaahqnjpa9nqmtln4u3; _csrf-backend=633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%F3%D8%5D%DC%B5%94%1EeA%0A%D0%27%E1x%8Ai%93%92%D5%0E%DB%12%A2%FF%FBKF%8D%0C%07Fj%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/fix-spider/frontend/web/index.php'
+    'REMOTE_PORT' => '52552'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/fix-spider/frontend/web/'
+    'SCRIPT_NAME' => '/fix-spider/frontend/web/index.php'
+    'PHP_SELF' => '/fix-spider/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498131860.996
+    'REQUEST_TIME' => 1498131860
+]
+2017-06-22 13:44:22 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 25061 bytes' 
+
+in C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 88, Array)
+#1 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-22 13:44:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'n1s88elce2u6na06v7nposuac3'
+    '_csrf-frontend' => '91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"z-“∞=1$≤u√AˆPJé Ü=ƒ∞øà,kv˚∞uÍ\";}'
+    'advanced-backend' => 'iv6au1tiaahqnjpa9nqmtln4u3'
+    '_csrf-backend' => '633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Ûÿ]‹µîeA
+–\'·xäiìí’€¢ˇ˚KFçFj\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'imei' => '865249030347618'
+    'idimei' => '24'
+    'name' => 'suhendri'
+    'email' => 'suhendri.mardiyanto@gmail.com'
+    'address' => 'Jl. Johar Baru Utara V No.1, Jakarta Pusat, DKI Jakarta'
+    'phone' => '081371252919'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/fix-spider/frontend/web/'
+    'HTTP_COOKIE' => 'advanced-frontend=n1s88elce2u6na06v7nposuac3; _csrf-frontend=91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22z-%D2%B0%3D1%24%B2u%0C%C3A%F6PJ%8E%0E%CA%86%3D%C4%B0%BF%88%2Ckv%12%FB%B0u%EA%22%3B%7D; advanced-backend=iv6au1tiaahqnjpa9nqmtln4u3; _csrf-backend=633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%F3%D8%5D%DC%B5%94%1EeA%0A%D0%27%E1x%8Ai%93%92%D5%0E%DB%12%A2%FF%FBKF%8D%0C%07Fj%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/fix-spider/frontend/web/index.php'
+    'REMOTE_PORT' => '52553'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/fix-spider/frontend/web/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/fix-spider/frontend/web/index.php'
+    'PHP_SELF' => '/fix-spider/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498131862.596
+    'REQUEST_TIME' => 1498131862
+]
+2017-06-22 13:44:38 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 25061 bytes' 
+
+in C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'C:\\xampp\\htdocs...', 88, Array)
+#1 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-22 13:44:38 [::1][-][-][info][application] $_GET = [
+=======
 2017-06-22 10:42:21 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 25061 bytes' 
 
 in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
@@ -5080,21 +5256,44 @@ Stack trace:
 #6 [internal function]: yii\log\Logger->flush(true)
 #7 {main}
 2017-06-22 10:42:21 [::1][-][-][info][application] $_GET = [
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'r' => 'imeicheck/check'
 ]
 
 $_COOKIE = [
+<<<<<<< HEAD
+    'advanced-frontend' => 'n1s88elce2u6na06v7nposuac3'
+    '_csrf-frontend' => '91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"z-“∞=1$≤u√AˆPJé Ü=ƒ∞øà,kv˚∞uÍ\";}'
+    'advanced-backend' => 'iv6au1tiaahqnjpa9nqmtln4u3'
+    '_csrf-backend' => '633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Ûÿ]‹µîeA
+–\'·xäiìí’€¢ˇ˚KFçFj\";}'
+=======
     '_identity' => '379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
     '_csrf-backend' => 'c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"
 —Ï√≠≥JrçË◊»Æ‚ÂŸÒr≈e<ÛSœ˙Ü¿Ô3s\";}'
     '_csrf-frontend' => '794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"r£ƒF»Õ$ ˛´9Øî8cí’∫ ùêï:É,ÈäÉ™x∫o\";}'
     'advanced-backend' => 'hq7melkcjnnholobc9oku4p972'
     'advanced-frontend' => 'd34gj7gg3buegjuct9svucjho7'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
+    'imei' => '865249030347618'
+    'idimei' => '24'
+    'name' => 'suhendri'
+    'email' => 'suhendri.mardiyanto@gmail.com'
+    'address' => 'Jl. Johar Baru Utara V No.1, Jakarta Pusat, DKI Jakarta'
+    'phone' => '081371252919'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
     'imei' => '865249031551713'
     'idimei' => '123'
     'name' => 'Aditiya K'
@@ -5107,10 +5306,25 @@ $_SERVER = [
     'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=n1s88elce2u6na06v7nposuac3; _csrf-frontend=91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22z-%D2%B0%3D1%24%B2u%0C%C3A%F6PJ%8E%0E%CA%86%3D%C4%B0%BF%88%2Ckv%12%FB%B0u%EA%22%3B%7D; advanced-backend=iv6au1tiaahqnjpa9nqmtln4u3; _csrf-backend=633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%F3%D8%5D%DC%B5%94%1EeA%0A%D0%27%E1x%8Ai%93%92%D5%0E%DB%12%A2%FF%FBKF%8D%0C%07Fj%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+=======
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
@@ -5123,6 +5337,7 @@ $_SERVER = [
     'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5130,6 +5345,15 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/fix-spider/frontend/web/index.php'
+    'REMOTE_PORT' => '52557'
+=======
     'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5137,10 +5361,31 @@ $_SERVER = [
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
     'REMOTE_PORT' => '51965'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+<<<<<<< HEAD
+    'REQUEST_URI' => '/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/fix-spider/frontend/web/index.php'
+    'PHP_SELF' => '/fix-spider/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498131878.061
+    'REQUEST_TIME' => 1498131878
+]
+2017-06-22 13:45:07 [::1][-][n1s88elce2u6na06v7nposuac3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in C:\xampp\htdocs\fix-spider\frontend\controllers\ImeicheckController.php:46
+Stack trace:
+#0 C:\xampp\htdocs\fix-spider\frontend\controllers\ImeicheckController.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 [internal function]: frontend\controllers\ImeicheckController->actionCheck()
+#2 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('check', Array)
+#5 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('imeicheck/check', Array)
+#6 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\fix-spider\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2017-06-22 13:45:06 [::1][-][n1s88elce2u6na06v7nposuac3][info][application] $_GET = [
+=======
     'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
     'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
     'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
@@ -5159,10 +5404,27 @@ Stack trace:
 #7 D:\XAMPP\htdocs\oppoxspiderman\frontend\web\index.php(17): yii\base\Application->run()
 #8 {main}
 2017-06-22 10:43:12 [::1][-][d34gj7gg3buegjuct9svucjho7][info][application] $_GET = [
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'r' => 'imeicheck/check'
 ]
 
 $_POST = [
+<<<<<<< HEAD
+    '_csrf-frontend' => 'co3AuFTt5UzHkeArpElpxmtFVQqwvl82cl0JolM1LZMIoBIIadzB_rKdI2pSGSNIZY_TN3QO4L5eNn-wqIVYeQ=='
+    'CheckForm' => [
+        'imeicheck' => '123456'
+        'reCaptcha' => '03AOPBWq_eKqDZmnv6k2k2qFAtJm-IAzuzBbCYlHdAGoZUai63Ht1XwwJyyMRSSLaaoGqyjy1NMBmfU2w-zLZ5XvZlyKNPIc3nt8b1cTufTseyS-uZNgwZh3y0hNzHwhsAPvwFI2DVbekkJgBfotAkLJbmNASISTMyc4iMsGZKSCeDO9U9OffLzRXbiAab5WuK7IIL9_D8fQZtsYB2zpxcu8HIrk3tSdxiyalz5pkqGm842_MmLJlsN9gzuYWvZTdveWb7wO5T0rIGo1FX3uDy4atHCBmt11qBOawmizYqYNIaWHvi2YvMEF-3DP_GfYkam2PltQ3bbUGg'
+    ]
+    'g-recaptcha-response' => '03AOPBWq_eKqDZmnv6k2k2qFAtJm-IAzuzBbCYlHdAGoZUai63Ht1XwwJyyMRSSLaaoGqyjy1NMBmfU2w-zLZ5XvZlyKNPIc3nt8b1cTufTseyS-uZNgwZh3y0hNzHwhsAPvwFI2DVbekkJgBfotAkLJbmNASISTMyc4iMsGZKSCeDO9U9OffLzRXbiAab5WuK7IIL9_D8fQZtsYB2zpxcu8HIrk3tSdxiyalz5pkqGm842_MmLJlsN9gzuYWvZTdveWb7wO5T0rIGo1FX3uDy4atHCBmt11qBOawmizYqYNIaWHvi2YvMEF-3DP_GfYkam2PltQ3bbUGg'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'n1s88elce2u6na06v7nposuac3'
+    '_csrf-frontend' => '91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"z-“∞=1$≤u√AˆPJé Ü=ƒ∞øà,kv˚∞uÍ\";}'
+    'advanced-backend' => 'iv6au1tiaahqnjpa9nqmtln4u3'
+    '_csrf-backend' => '633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Ûÿ]‹µîeA
+–\'·xäiìí’€¢ˇ˚KFçFj\";}'
+=======
     '_csrf-frontend' => 'oVN7yK24II_J_4xxr2eeIvuEymR8AZKjLkQA55iNy0PT8L-OZXUERTdUtd47X_2wLj7q-eyUqCACrYpkMvVxLA=='
     'CheckForm' => [
         'imeicheck' => '865249030547597'
@@ -5178,11 +5440,26 @@ $_COOKIE = [
     '_csrf-frontend' => '794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"r£ƒF»Õ$ ˛´9Øî8cí’∫ ùêï:É,ÈäÉ™x∫o\";}'
     'advanced-backend' => 'hq7melkcjnnholobc9oku4p972'
     'advanced-frontend' => 'd34gj7gg3buegjuct9svucjho7'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
+    'imei' => '123456'
+    'idimei' => '24'
+    'name' => 'suhendri'
+    'email' => 'suhendri.mardiyanto@gmail.com'
+    'address' => 'Jl. Johar Baru Utara V No.1, Jakarta Pusat, DKI Jakarta'
+    'phone' => '081371252919'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
     'imei' => '865249030547597'
     'idimei' => '123'
     'name' => 'Aditiya K'
@@ -5195,10 +5472,28 @@ $_SERVER = [
     'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '855'
+    'HTTP_REFERER' => 'http://localhost/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'HTTP_COOKIE' => 'advanced-frontend=n1s88elce2u6na06v7nposuac3; _csrf-frontend=91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22z-%D2%B0%3D1%24%B2u%0C%C3A%F6PJ%8E%0E%CA%86%3D%C4%B0%BF%88%2Ckv%12%FB%B0u%EA%22%3B%7D; advanced-backend=iv6au1tiaahqnjpa9nqmtln4u3; _csrf-backend=633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%F3%D8%5D%DC%B5%94%1EeA%0A%D0%27%E1x%8Ai%93%92%D5%0E%DB%12%A2%FF%FBKF%8D%0C%07Fj%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+=======
     'HTTP_CONNECTION' => 'keep-alive'
     'CONTENT_LENGTH' => '1164'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
@@ -5216,6 +5511,7 @@ $_SERVER = [
     'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5223,6 +5519,15 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/fix-spider/frontend/web/index.php'
+    'REMOTE_PORT' => '52563'
+=======
     'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5230,10 +5535,66 @@ $_SERVER = [
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
     'REMOTE_PORT' => '52024'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'POST'
     'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+<<<<<<< HEAD
+    'REQUEST_URI' => '/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/fix-spider/frontend/web/index.php'
+    'PHP_SELF' => '/fix-spider/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498131906.862
+    'REQUEST_TIME' => 1498131906
+]
+2017-06-22 13:45:54 [::1][-][n1s88elce2u6na06v7nposuac3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id_imei' in C:\xampp\htdocs\fix-spider\frontend\controllers\ImeicheckController.php:46
+Stack trace:
+#0 C:\xampp\htdocs\fix-spider\frontend\controllers\ImeicheckController.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 [internal function]: frontend\controllers\ImeicheckController->actionCheck()
+#2 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('check', Array)
+#5 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('imeicheck/check', Array)
+#6 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\fix-spider\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2017-06-22 13:45:53 [::1][-][n1s88elce2u6na06v7nposuac3][info][application] $_GET = [
+    'r' => 'imeicheck/check'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'Hlo2Jz2FoRRW3BBZ1u7hSz2iamdO7phCcjMdYDd8JEhkd-SXALSFpiPQ0xggvqvFM2jsWopeJ8peWGtyzMxRog=='
+    'CheckForm' => [
+        'imeicheck' => '123456'
+        'reCaptcha' => '03AOPBWq8hKjKFWCATTbEhZYQlfVJgISwXWHWhu0HucSg1YwUU3IxC6VltA1JvnCiTUWdfdQq2PntYGmIM1VnAuiMKvrVq50w1_0yOX8sX4JH4DfXYgUo_W6xronIrdftGYKK_FQrw88vUappMluGJE_fOeLf2d9h7YImwuB8YSkgu1yjYAKLzBNAMGlm_5ZkjJV8i4-oeg4WZU6q-xg9fWsU364noWX11d0q-TwQ28fn9uVWmIwcwBrFQrPii2zzEbCezMUjSkeJHojpjFxh0v6SgnSu3jX_nWRZH-SCV1EvEi6wKPoOUQkuVhUWv-DhS7COGuajjARzm'
+    ]
+    'g-recaptcha-response' => '03AOPBWq8hKjKFWCATTbEhZYQlfVJgISwXWHWhu0HucSg1YwUU3IxC6VltA1JvnCiTUWdfdQq2PntYGmIM1VnAuiMKvrVq50w1_0yOX8sX4JH4DfXYgUo_W6xronIrdftGYKK_FQrw88vUappMluGJE_fOeLf2d9h7YImwuB8YSkgu1yjYAKLzBNAMGlm_5ZkjJV8i4-oeg4WZU6q-xg9fWsU364noWX11d0q-TwQ28fn9uVWmIwcwBrFQrPii2zzEbCezMUjSkeJHojpjFxh0v6SgnSu3jX_nWRZH-SCV1EvEi6wKPoOUQkuVhUWv-DhS7COGuajjARzm'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'n1s88elce2u6na06v7nposuac3'
+    '_csrf-frontend' => '91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"z-“∞=1$≤u√AˆPJé Ü=ƒ∞øà,kv˚∞uÍ\";}'
+    'advanced-backend' => 'iv6au1tiaahqnjpa9nqmtln4u3'
+    '_csrf-backend' => '633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Ûÿ]‹µîeA
+–\'·xäiìí’€¢ˇ˚KFçFj\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'imei' => '123456'
+    'idimei' => '24'
+    'name' => 'suhendri'
+    'email' => 'suhendri.mardiyanto@gmail.com'
+    'address' => 'Jl. Johar Baru Utara V No.1, Jakarta Pusat, DKI Jakarta'
+    'phone' => '081371252919'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
     'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
     'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
     'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
@@ -5262,10 +5623,28 @@ $_SERVER = [
     'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '855'
+    'HTTP_REFERER' => 'http://localhost/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'HTTP_COOKIE' => 'advanced-frontend=n1s88elce2u6na06v7nposuac3; _csrf-frontend=91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22z-%D2%B0%3D1%24%B2u%0C%C3A%F6PJ%8E%0E%CA%86%3D%C4%B0%BF%88%2Ckv%12%FB%B0u%EA%22%3B%7D; advanced-backend=iv6au1tiaahqnjpa9nqmtln4u3; _csrf-backend=633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%F3%D8%5D%DC%B5%94%1EeA%0A%D0%27%E1x%8Ai%93%92%D5%0E%DB%12%A2%FF%FBKF%8D%0C%07Fj%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+=======
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
@@ -5279,6 +5658,7 @@ $_SERVER = [
     'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5286,6 +5666,72 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/fix-spider/frontend/web/index.php'
+    'REMOTE_PORT' => '52576'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+    'REQUEST_URI' => '/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/fix-spider/frontend/web/index.php'
+    'PHP_SELF' => '/fix-spider/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498131953.695
+    'REQUEST_TIME' => 1498131953
+]
+2017-06-22 13:47:37 [::1][-][n1s88elce2u6na06v7nposuac3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in C:\xampp\htdocs\fix-spider\frontend\controllers\ImeicheckController.php:43
+Stack trace:
+#0 C:\xampp\htdocs\fix-spider\frontend\controllers\ImeicheckController.php(43): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 43, Array)
+#1 [internal function]: frontend\controllers\ImeicheckController->actionCheck()
+#2 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('check', Array)
+#5 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('imeicheck/check', Array)
+#6 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\fix-spider\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2017-06-22 13:47:37 [::1][-][n1s88elce2u6na06v7nposuac3][info][application] $_GET = [
+    'r' => 'imeicheck/check'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'zWfILKH-XVJAUtvSlV04fpZdklcdj3EG3raGyZlELBm3ShqcnM954DVeGJNjDXLwmJcUatk_zo7y3fDbYvRZ8w=='
+    'CheckForm' => [
+        'imeicheck' => '123456'
+        'reCaptcha' => '03AOPBWq8vgYJNSGfhh9f2w0preEZcjBl378pp_so5QD4MeS2WvgFxR-04s_mvM7yoRfEYQX5ZbyFDmofByHpHi_fQ1h3QCK9qrtzJHudS26ui_UnD4X4XrR4qAqlnT76mC_CbkfcZhixY9Phara_6ImoKJhsGgl-s1-G-pHmKGNFiGk3U5Dovrw8uNOj9aC17-ulwxUNY2elCPlUQp0Khn_9N9VcoyS20-LOuweUY3uS2WtnaaWkAhxTQHqOi9pTnkU6KszYluYXb7JqdfN6srjgX0pyyDcNsD263ol2HhWDLujRVmLOpojXlzg_YlVWMapR3NZIjqvyH'
+    ]
+    'g-recaptcha-response' => '03AOPBWq8vgYJNSGfhh9f2w0preEZcjBl378pp_so5QD4MeS2WvgFxR-04s_mvM7yoRfEYQX5ZbyFDmofByHpHi_fQ1h3QCK9qrtzJHudS26ui_UnD4X4XrR4qAqlnT76mC_CbkfcZhixY9Phara_6ImoKJhsGgl-s1-G-pHmKGNFiGk3U5Dovrw8uNOj9aC17-ulwxUNY2elCPlUQp0Khn_9N9VcoyS20-LOuweUY3uS2WtnaaWkAhxTQHqOi9pTnkU6KszYluYXb7JqdfN6srjgX0pyyDcNsD263ol2HhWDLujRVmLOpojXlzg_YlVWMapR3NZIjqvyH'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'n1s88elce2u6na06v7nposuac3'
+    '_csrf-frontend' => '91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"z-“∞=1$≤u√AˆPJé Ü=ƒ∞øà,kv˚∞uÍ\";}'
+    'advanced-backend' => 'iv6au1tiaahqnjpa9nqmtln4u3'
+    '_csrf-backend' => '633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Ûÿ]‹µîeA
+–\'·xäiìí’€¢ˇ˚KFçFj\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'imei' => '123456'
+    'idimei' => '24'
+    'name' => 'suhendri'
+    'email' => 'suhendri.mardiyanto@gmail.com'
+    'address' => 'Jl. Johar Baru Utara V No.1, Jakarta Pusat, DKI Jakarta'
+    'phone' => '081371252919'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
     'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5334,10 +5780,28 @@ $_SERVER = [
     'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '855'
+    'HTTP_REFERER' => 'http://localhost/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'HTTP_COOKIE' => 'advanced-frontend=n1s88elce2u6na06v7nposuac3; _csrf-frontend=91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22z-%D2%B0%3D1%24%B2u%0C%C3A%F6PJ%8E%0E%CA%86%3D%C4%B0%BF%88%2Ckv%12%FB%B0u%EA%22%3B%7D; advanced-backend=iv6au1tiaahqnjpa9nqmtln4u3; _csrf-backend=633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%F3%D8%5D%DC%B5%94%1EeA%0A%D0%27%E1x%8Ai%93%92%D5%0E%DB%12%A2%FF%FBKF%8D%0C%07Fj%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+=======
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
@@ -5352,6 +5816,7 @@ $_SERVER = [
     'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5359,6 +5824,72 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/fix-spider/frontend/web/index.php'
+    'REMOTE_PORT' => '52594'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+    'REQUEST_URI' => '/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/fix-spider/frontend/web/index.php'
+    'PHP_SELF' => '/fix-spider/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498132057.463
+    'REQUEST_TIME' => 1498132057
+]
+2017-06-22 13:48:48 [::1][-][n1s88elce2u6na06v7nposuac3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id_imei' in C:\xampp\htdocs\fix-spider\frontend\controllers\ImeicheckController.php:43
+Stack trace:
+#0 C:\xampp\htdocs\fix-spider\frontend\controllers\ImeicheckController.php(43): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 43, Array)
+#1 [internal function]: frontend\controllers\ImeicheckController->actionCheck()
+#2 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('check', Array)
+#5 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('imeicheck/check', Array)
+#6 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\fix-spider\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2017-06-22 13:48:48 [::1][-][n1s88elce2u6na06v7nposuac3][info][application] $_GET = [
+    'r' => 'imeicheck/check'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'V_SVyD5cHcPNWHt6nwg9_IFCzB_CwV0QVf4hBJUYxqst2Ud4A205cbhUuDtpWHdyj4hKIgZx4ph5lVcWbqizQQ=='
+    'CheckForm' => [
+        'imeicheck' => '123456'
+        'reCaptcha' => '03AOPBWq-4ct7USvSb_iI_DNYRQVfJyAHdu2PpYIjqgO3FD-4SC9Mf2M2IW2oFnyu_rUpAJYUf58-dmePYN0cNMQy7Hg959DmJUR5A-n4Hr4lmYkfxJmqTnJqr7zdDzKV7EqIjc4uRHpudXj-_jJrWl9MoC9pNAM3KW_QFKWoldMxBbjRW1ql-x1_uVSLT6HJF8aNqBVe2jJe5Triq243fNtelfnlWdeL6or_5JCynmedXILi5HWO71QEt-ZLCMYKnyH1DH0CFGYJugQ9icD6tKrCU0-ZxT3VhCueJvGWw-yQ3RqASmvle8mU-r76EZD8UWGR4xoq1xGK_'
+    ]
+    'g-recaptcha-response' => '03AOPBWq-4ct7USvSb_iI_DNYRQVfJyAHdu2PpYIjqgO3FD-4SC9Mf2M2IW2oFnyu_rUpAJYUf58-dmePYN0cNMQy7Hg959DmJUR5A-n4Hr4lmYkfxJmqTnJqr7zdDzKV7EqIjc4uRHpudXj-_jJrWl9MoC9pNAM3KW_QFKWoldMxBbjRW1ql-x1_uVSLT6HJF8aNqBVe2jJe5Triq243fNtelfnlWdeL6or_5JCynmedXILi5HWO71QEt-ZLCMYKnyH1DH0CFGYJugQ9icD6tKrCU0-ZxT3VhCueJvGWw-yQ3RqASmvle8mU-r76EZD8UWGR4xoq1xGK_'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'n1s88elce2u6na06v7nposuac3'
+    '_csrf-frontend' => '91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"z-“∞=1$≤u√AˆPJé Ü=ƒ∞øà,kv˚∞uÍ\";}'
+    'advanced-backend' => 'iv6au1tiaahqnjpa9nqmtln4u3'
+    '_csrf-backend' => '633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Ûÿ]‹µîeA
+–\'·xäiìí’€¢ˇ˚KFçFj\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'imei' => '123456'
+    'idimei' => '24'
+    'name' => 'suhendri'
+    'email' => 'suhendri.mardiyanto@gmail.com'
+    'address' => 'Jl. Johar Baru Utara V No.1, Jakarta Pusat, DKI Jakarta'
+    'phone' => '081371252919'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
     'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5407,10 +5938,28 @@ $_SERVER = [
     'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '855'
+    'HTTP_REFERER' => 'http://localhost/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'HTTP_COOKIE' => 'advanced-frontend=n1s88elce2u6na06v7nposuac3; _csrf-frontend=91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22z-%D2%B0%3D1%24%B2u%0C%C3A%F6PJ%8E%0E%CA%86%3D%C4%B0%BF%88%2Ckv%12%FB%B0u%EA%22%3B%7D; advanced-backend=iv6au1tiaahqnjpa9nqmtln4u3; _csrf-backend=633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%F3%D8%5D%DC%B5%94%1EeA%0A%D0%27%E1x%8Ai%93%92%D5%0E%DB%12%A2%FF%FBKF%8D%0C%07Fj%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+=======
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
@@ -5424,6 +5973,7 @@ $_SERVER = [
     'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5431,6 +5981,72 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/fix-spider/frontend/web/index.php'
+    'REMOTE_PORT' => '52605'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+    'REQUEST_URI' => '/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/fix-spider/frontend/web/index.php'
+    'PHP_SELF' => '/fix-spider/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498132128.089
+    'REQUEST_TIME' => 1498132128
+]
+2017-06-22 14:00:44 [::1][-][n1s88elce2u6na06v7nposuac3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id_imei' in C:\xampp\htdocs\fix-spider\frontend\controllers\ImeicheckController.php:65
+Stack trace:
+#0 C:\xampp\htdocs\fix-spider\frontend\controllers\ImeicheckController.php(65): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 [internal function]: frontend\controllers\ImeicheckController->actionCheck()
+#2 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('check', Array)
+#5 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('imeicheck/check', Array)
+#6 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\fix-spider\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2017-06-22 14:00:44 [::1][-][n1s88elce2u6na06v7nposuac3][info][application] $_GET = [
+    'r' => 'imeicheck/check'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'kxW0AznVYn0F6puicCgLuIOunAGETc4SnN5-x24IFC3pOGazBORGz3DmWOOGeEE2jWQaPED9cZqwtQjVlbhhxw=='
+    'CheckForm' => [
+        'imeicheck' => '865249030654039'
+        'reCaptcha' => '03AOPBWq8_pofArgn2KDLwfWXeHUo3jIDnyl9x4OAeLr0PtTXqmf_9mcefIRCUctuliirfL3YJvt8gVzonQMuL-fCkgiFlzwyGaHGtyNGqdiv6F3tbn1TRzU-AKMxdmQmGm67ir4V_AqJGebFz7Yn8wVWfbmHIE0eHg0AJVKQilyNmyTHoinQSrjnT-_1KpVWahLw8bxBABG3sKLzs4PVm-2VVYPStZ3OZ6qYGAfn0wrdL2NzFSQ-r-lMMBBorjG2GbUDt-BnqXljioO4CsndeuwnkbYzwbwQby2GgrOfWhU2PM8dAtPhutGvZx3Pz8Gd2vftuEmrMI59J'
+    ]
+    'g-recaptcha-response' => '03AOPBWq8_pofArgn2KDLwfWXeHUo3jIDnyl9x4OAeLr0PtTXqmf_9mcefIRCUctuliirfL3YJvt8gVzonQMuL-fCkgiFlzwyGaHGtyNGqdiv6F3tbn1TRzU-AKMxdmQmGm67ir4V_AqJGebFz7Yn8wVWfbmHIE0eHg0AJVKQilyNmyTHoinQSrjnT-_1KpVWahLw8bxBABG3sKLzs4PVm-2VVYPStZ3OZ6qYGAfn0wrdL2NzFSQ-r-lMMBBorjG2GbUDt-BnqXljioO4CsndeuwnkbYzwbwQby2GgrOfWhU2PM8dAtPhutGvZx3Pz8Gd2vftuEmrMI59J'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'n1s88elce2u6na06v7nposuac3'
+    '_csrf-frontend' => '91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"z-“∞=1$≤u√AˆPJé Ü=ƒ∞øà,kv˚∞uÍ\";}'
+    'advanced-backend' => 'iv6au1tiaahqnjpa9nqmtln4u3'
+    '_csrf-backend' => '633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Ûÿ]‹µîeA
+–\'·xäiìí’€¢ˇ˚KFçFj\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'imei' => '865249030654039'
+    'idimei' => '24'
+    'name' => 'suhendri'
+    'email' => 'suhendri.mardiyanto@gmail.com'
+    'address' => 'Jl. Johar Baru Utara V No.1, Jakarta Pusat, DKI Jakarta'
+    'phone' => '081371252919'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
     'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5479,10 +6095,28 @@ $_SERVER = [
     'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '864'
+    'HTTP_REFERER' => 'http://localhost/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'HTTP_COOKIE' => 'advanced-frontend=n1s88elce2u6na06v7nposuac3; _csrf-frontend=91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22z-%D2%B0%3D1%24%B2u%0C%C3A%F6PJ%8E%0E%CA%86%3D%C4%B0%BF%88%2Ckv%12%FB%B0u%EA%22%3B%7D; advanced-backend=iv6au1tiaahqnjpa9nqmtln4u3; _csrf-backend=633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%F3%D8%5D%DC%B5%94%1EeA%0A%D0%27%E1x%8Ai%93%92%D5%0E%DB%12%A2%FF%FBKF%8D%0C%07Fj%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+=======
     'HTTP_CONNECTION' => 'keep-alive'
     'HTTP_CACHE_CONTROL' => 'max-age=0'
     'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
@@ -5497,6 +6131,7 @@ $_SERVER = [
     'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5504,6 +6139,24 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/fix-spider/frontend/web/index.php'
+    'REMOTE_PORT' => '52705'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+    'REQUEST_URI' => '/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/fix-spider/frontend/web/index.php'
+    'PHP_SELF' => '/fix-spider/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498132844.045
+    'REQUEST_TIME' => 1498132844
+=======
     'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5520,6 +6173,7 @@ $_SERVER = [
     'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1498126178.691
     'REQUEST_TIME' => 1498126178
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
 ]
 2017-06-22 13:55:42 [::1][-][d34gj7gg3buegjuct9svucjho7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\XAMPP\htdocs\oppoxspiderman\frontend\controllers\ImeicheckController.php:51
 Stack trace:
