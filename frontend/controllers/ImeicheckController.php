@@ -39,13 +39,21 @@ class ImeicheckController extends Controller
                         ->where(['imei1' => $imeicheck])
                         ->andwhere(['sold' => 1])
                         ->all();
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> 345de18b5e68301f7cdf10910c55a1352c2f43db
             $imeiattemp = (new \yii\db\Query())
                             ->select(['*'])
                             ->from('detail_trans')
                             ->where(['id_imei' => $checking[0]['id_imei']])
                             ->all();
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> 345de18b5e68301f7cdf10910c55a1352c2f43db
             $checkware = (new\yii\db\Query())
                         ->select(['id_imei'])
                         ->from('imei')
@@ -55,9 +63,17 @@ class ImeicheckController extends Controller
             
             //print_r($checking[0]['id_imei']);exit();
             if(count($checking) == 1){
-                $idimei = $checking[0]['id_imei'];
-                $session['idimei'] = $idimei;
-                return $this->redirect(array('detailtrans/create/'));
+                
+                if (count($imeiattemp) == 1) {
+                    Yii::$app->session->setFlash('flashMessage', 'Maaf, IMEI yang kamu masukan sudah terpakai !');
+                    return $this->render('check', [
+                        'model' => $model,
+                    ]);
+                }else{
+                    $idimei = $checking[0]['id_imei'];
+                    $session['idimei'] = $idimei;
+                    return $this->redirect(array('detailtrans/create/'));
+                }
             }elseif (count($checkware) == 1){
                  Yii::$app->session->setFlash('flashMessage', 'Maaf, IMEI yang kamu masukan tidak terdaftar sebagai OPPO F3 yang terjual. Silakan coba lagi dalam 2x24 Jam');
                 return $this->render('check', [

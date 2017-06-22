@@ -94,7 +94,7 @@ class DetailtransController extends Controller
                             ->select(['*'])
                             ->from('detail_trans')
                             ->where(['id_imei' => $session['idimei']])
-                            ->orwhere(['phone' => $phone])
+                            ->andwhere(['phone' => $phone])
                             ->all();
 
                     if(count($imeiattemp) == 1 ){
