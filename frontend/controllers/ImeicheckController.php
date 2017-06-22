@@ -45,14 +45,6 @@ class ImeicheckController extends Controller
                         ->andwhere(['sold' => 1])
                         ->all();
 
-            
-
-            /*$imeiattemp = (new \yii\db\Query())
-                            ->select(['*'])
-                            ->from('detail_trans')
-                            ->where(['id_imei' => $checking['id_imei']])
-                            ->all();*/
-
             $checkware = (new\yii\db\Query())
                         ->select(['id_imei'])
                         ->from('imei')
@@ -60,25 +52,24 @@ class ImeicheckController extends Controller
                         ->andwhere(['warehouse' => 1])
                         ->all();
             
-            //print_r($checking[0]['id_imei']);exit();
+            
             if(count($checking) == 1){
-                $imeiattemp = (new \yii\db\Query())
-                            ->select(['*'])
-                            ->from('detail_trans')
-                            ->where(['id_imei' => $checking[0]['id_imei']])
-                            ->all();
                 $idimei = $checking[0]['id_imei'];
                 $session['idimei'] = $idimei;
 
+                $imeiattemp = (new \yii\db\Query())
+                            ->select(['*'])
+                            ->from('detail_trans')
+                            ->where(['id_imei' => $idimei])
+                            ->all();
+
                 //Check Imei sudah digunakan atau belum
-                if (count($imeiattemp) == 1) {
+                if (count($imeiattemp) != 0 ) {
                     Yii::$app->session->setFlash('flashMessage', 'Maaf, IMEI yang kamu masukan sudah terpakai !');
                     return $this->render('check', [
                         'model' => $model,
                     ]);
                 }else{
-                    $idimei = $checking[0]['id_imei'];
-                    $session['idimei'] = $idimei;
                     return $this->redirect(array('detailtrans/create/'));
                 }
             }elseif (count($checkware) == 1){
