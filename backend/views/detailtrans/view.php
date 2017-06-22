@@ -36,11 +36,21 @@ $this->params['breadcrumbs'][] = $this->title;
             'email:email',
             'path_src',
             'path_web',
+            
             'status',
             'stat_email1:email',
             'stat_email2:email',
             'created_at',
-        ],
+            [
+            'attribute' => 'path_web',
+            'format' => 'html',
+            'label' => 'Photo',
+            'value' => function ($data) {
+                return Html::img('../../uploads/' . $data['path_web'],
+                    ['width' => '300px']);
+                    },        
+                ],
+            ],
     ]) ?>
 
 </div>
