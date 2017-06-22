@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use kartik\file\FileInput;
 use yii\web\Session;
+use himiklab\yii2\recaptcha;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\DetailTrans */

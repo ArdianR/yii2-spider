@@ -2,6 +2,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use yii\web\Session;
+use himiklab\yii2\recaptcha;
 ?>
 <h4 style="color:red;"><?php echo \Yii::$app->session->getFlash('flashMessage'); ?></h4>
 <?php

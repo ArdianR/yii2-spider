@@ -6,6 +6,7 @@ use Yii;
 use yii\db\ActiveRecord;
 use yii\web\UploadedFile;
 use app\models\CustomerDetail;
+use himiklab\yii2\recaptcha;
 
 Yii::$app->params['uploadPath'] = Yii::$app->basePath . '/../uploads/';
 Yii::$app->params['uploadUrl'] = Yii::$app->urlManager->baseUrl . '/../uploads/';
@@ -34,6 +35,7 @@ class DetailTrans extends \yii\db\ActiveRecord
     public $image;
     public $name;
     public $email;
+    public $reCaptcha;
     /**
      * @inheritdoc
      */
