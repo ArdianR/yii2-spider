@@ -5066,6 +5066,7 @@ $_SERVER = [
     'REQUEST_TIME' => 1498119523
 >>>>>>> a895c4b959c34e75f601df44a0dbd7b5c1cf7086
 ]
+<<<<<<< HEAD
 2017-06-22 13:44:21 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 25061 bytes' 
 
 in C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2-debug\LogTarget.php:88
@@ -5240,20 +5241,46 @@ Stack trace:
 #6 [internal function]: yii\log\Logger->flush(true)
 #7 {main}
 2017-06-22 13:44:38 [::1][-][-][info][application] $_GET = [
+=======
+2017-06-22 10:42:21 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 25061 bytes' 
+
+in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php:88
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\\XAMPP\\htdocs...', 88, Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(88): unserialize('<<<<<<< HEAD\r\na...')
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(63): yii\debug\LogTarget->updateIndexFile('D:\\XAMPP\\htdocs...', Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\log\Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2017-06-22 10:42:21 [::1][-][-][info][application] $_GET = [
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'r' => 'imeicheck/check'
 ]
 
 $_COOKIE = [
+<<<<<<< HEAD
     'advanced-frontend' => 'n1s88elce2u6na06v7nposuac3'
     '_csrf-frontend' => '91c556db1f7a6d030e0ff7ada2e9c89f2c0645100bef3cedf69b614735f74a0ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"z-“∞=1$≤u√AˆPJé Ü=ƒ∞øà,kv˚∞uÍ\";}'
     'advanced-backend' => 'iv6au1tiaahqnjpa9nqmtln4u3'
     '_csrf-backend' => '633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Ûÿ]‹µîeA
 –\'·xäiìí’€¢ˇ˚KFçFj\";}'
+=======
+    '_identity' => '379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf-backend' => 'c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"
+—Ï√≠≥JrçË◊»Æ‚ÂŸÒr≈e<ÛSœ˙Ü¿Ô3s\";}'
+    '_csrf-frontend' => '794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"r£ƒF»Õ$ ˛´9Øî8cí’∫ ùêï:É,ÈäÉ™x∫o\";}'
+    'advanced-backend' => 'hq7melkcjnnholobc9oku4p972'
+    'advanced-frontend' => 'd34gj7gg3buegjuct9svucjho7'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     'imei' => '865249030347618'
     'idimei' => '24'
     'name' => 'suhendri'
@@ -5266,10 +5293,25 @@ $_SERVER = [
     'MIBDIRS' => 'C:/xampp/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
+    'imei' => '865249031551713'
+    'idimei' => '123'
+    'name' => 'Aditiya K'
+    'email' => 'wonx_shelond@yahoo.com'
+    'address' => 'Jl. H. Nawi Raya No.14 (Wisesa Motorsport)'
+    'phone' => '081219656530'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
@@ -5282,6 +5324,20 @@ $_SERVER = [
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+=======
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf-backend=c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%0A%D1%EC%C3%AD%B3Jr%8D%E8%D7%C8%AE%E2%E5%D9%F0%F1r%C5e%3C%F3S%CF%FA%86%03%C0%EF3s%22%3B%7D; _csrf-frontend=794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22r%A3%C4F%C8%CD%24%CA%FE%AB9%AF%948c%92%D5%BA+%9D%90%95%3A%83%2C%E9%8A%83%AAx%BAo%22%3B%7D; advanced-backend=hq7melkcjnnholobc9oku4p972; advanced-frontend=d34gj7gg3buegjuct9svucjho7; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\PuTTY\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\ADIT-DESKTOP\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ADIT-DESKTOP\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5289,6 +5345,7 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
     'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5296,10 +5353,20 @@ $_SERVER = [
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/fix-spider/frontend/web/index.php'
     'REMOTE_PORT' => '52557'
+=======
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '51965'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'GET'
     'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+<<<<<<< HEAD
     'REQUEST_URI' => '/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
     'SCRIPT_NAME' => '/fix-spider/frontend/web/index.php'
     'PHP_SELF' => '/fix-spider/frontend/web/index.php'
@@ -5318,10 +5385,31 @@ Stack trace:
 #7 C:\xampp\htdocs\fix-spider\frontend\web\index.php(17): yii\base\Application->run()
 #8 {main}
 2017-06-22 13:45:06 [::1][-][n1s88elce2u6na06v7nposuac3][info][application] $_GET = [
+=======
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498120941.535
+    'REQUEST_TIME' => 1498120941
+]
+2017-06-22 10:43:14 [::1][-][d34gj7gg3buegjuct9svucjho7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\XAMPP\htdocs\oppoxspiderman\frontend\controllers\ImeicheckController.php:46
+Stack trace:
+#0 D:\XAMPP\htdocs\oppoxspiderman\frontend\controllers\ImeicheckController.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'D:\\XAMPP\\htdocs...', 46, Array)
+#1 [internal function]: frontend\controllers\ImeicheckController->actionCheck()
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('check', Array)
+#5 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('imeicheck/check', Array)
+#6 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\XAMPP\htdocs\oppoxspiderman\frontend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2017-06-22 10:43:12 [::1][-][d34gj7gg3buegjuct9svucjho7][info][application] $_GET = [
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'r' => 'imeicheck/check'
 ]
 
 $_POST = [
+<<<<<<< HEAD
     '_csrf-frontend' => 'co3AuFTt5UzHkeArpElpxmtFVQqwvl82cl0JolM1LZMIoBIIadzB_rKdI2pSGSNIZY_TN3QO4L5eNn-wqIVYeQ=='
     'CheckForm' => [
         'imeicheck' => '123456'
@@ -5336,11 +5424,29 @@ $_COOKIE = [
     'advanced-backend' => 'iv6au1tiaahqnjpa9nqmtln4u3'
     '_csrf-backend' => '633f00809011dd8f9c823d9c91a747f80c478c69a72743cc59533c4667edf044a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Ûÿ]‹µîeA
 –\'·xäiìí’€¢ˇ˚KFçFj\";}'
+=======
+    '_csrf-frontend' => 'oVN7yK24II_J_4xxr2eeIvuEymR8AZKjLkQA55iNy0PT8L-OZXUERTdUtd47X_2wLj7q-eyUqCACrYpkMvVxLA=='
+    'CheckForm' => [
+        'imeicheck' => '865249030547597'
+        'reCaptcha' => '03AOPBWq_AkZChrxBHmrlt_zQ7_JF_RFre0aN4qIAFVmAA5JfBfp7llGkPgNHzuWGRa0bgcG7XjS8N0vzojmlyfeksmsyYZsldfabvdHcPplddq45-xgHWqzaueNU_-_NCmLICpAyYMNEukjeb2B0nXdD61tHjaG22R6N7R1g04XO2oz_jhOKQtnr5Pz7AEFaDFxryS-O44oKGKYRGDKj0qOjpuyi6SFgXDVEmPoJwOJqRE4Ep-6whJhO0Q5cq_bF1qSjj0Ziije42h0dYNg7E5rkFOGjrZFzjHQbM4ibEaPfHajQk1pUQRZt3V-s1A6ivwatqBvU1kXhBAsLeeIrzLG_DcGK51YHqD9cI_-3exvrgp2i1ckubz2LBb8nvyvRXUmjXFTYRazmX6zv1OFZCV07DzE2JAEI_DNuPJ9ruIKSyklj5K8bc-dUuCd_-mRW4k91Ie-s0golG6m3UXq7X7J4mjpHFKUuo0Q'
+    ]
+    'g-recaptcha-response' => '03AOPBWq_AkZChrxBHmrlt_zQ7_JF_RFre0aN4qIAFVmAA5JfBfp7llGkPgNHzuWGRa0bgcG7XjS8N0vzojmlyfeksmsyYZsldfabvdHcPplddq45-xgHWqzaueNU_-_NCmLICpAyYMNEukjeb2B0nXdD61tHjaG22R6N7R1g04XO2oz_jhOKQtnr5Pz7AEFaDFxryS-O44oKGKYRGDKj0qOjpuyi6SFgXDVEmPoJwOJqRE4Ep-6whJhO0Q5cq_bF1qSjj0Ziije42h0dYNg7E5rkFOGjrZFzjHQbM4ibEaPfHajQk1pUQRZt3V-s1A6ivwatqBvU1kXhBAsLeeIrzLG_DcGK51YHqD9cI_-3exvrgp2i1ckubz2LBb8nvyvRXUmjXFTYRazmX6zv1OFZCV07DzE2JAEI_DNuPJ9ruIKSyklj5K8bc-dUuCd_-mRW4k91Ie-s0golG6m3UXq7X7J4mjpHFKUuo0Q'
+]
+
+$_COOKIE = [
+    '_identity' => '379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf-backend' => 'c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"
+—Ï√≠≥JrçË◊»Æ‚ÂŸÒr≈e<ÛSœ˙Ü¿Ô3s\";}'
+    '_csrf-frontend' => '794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"r£ƒF»Õ$ ˛´9Øî8cí’∫ ùêï:É,ÈäÉ™x∫o\";}'
+    'advanced-backend' => 'hq7melkcjnnholobc9oku4p972'
+    'advanced-frontend' => 'd34gj7gg3buegjuct9svucjho7'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
 ]
 
 $_SESSION = [
     '__flash' => []
+<<<<<<< HEAD
     'imei' => '123456'
     'idimei' => '24'
     'name' => 'suhendri'
@@ -5353,10 +5459,25 @@ $_SERVER = [
     'MIBDIRS' => 'C:/xampp/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
+    'imei' => '865249030547597'
+    'idimei' => '123'
+    'name' => 'Aditiya K'
+    'email' => 'wonx_shelond@yahoo.com'
+    'address' => 'Jl. H. Nawi Raya No.14 (Wisesa Motorsport)'
+    'phone' => '081219656530'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
@@ -5372,6 +5493,25 @@ $_SERVER = [
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+=======
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1164'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf-backend=c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%0A%D1%EC%C3%AD%B3Jr%8D%E8%D7%C8%AE%E2%E5%D9%F0%F1r%C5e%3C%F3S%CF%FA%86%03%C0%EF3s%22%3B%7D; _csrf-frontend=794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22r%A3%C4F%C8%CD%24%CA%FE%AB9%AF%948c%92%D5%BA+%9D%90%95%3A%83%2C%E9%8A%83%AAx%BAo%22%3B%7D; advanced-backend=hq7melkcjnnholobc9oku4p972; advanced-frontend=d34gj7gg3buegjuct9svucjho7; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\PuTTY\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\ADIT-DESKTOP\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ADIT-DESKTOP\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5379,6 +5519,7 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
     'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5386,10 +5527,20 @@ $_SERVER = [
     'SERVER_ADMIN' => 'postmaster@localhost'
     'SCRIPT_FILENAME' => 'C:/xampp/htdocs/fix-spider/frontend/web/index.php'
     'REMOTE_PORT' => '52563'
+=======
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '52024'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'GATEWAY_INTERFACE' => 'CGI/1.1'
     'SERVER_PROTOCOL' => 'HTTP/1.1'
     'REQUEST_METHOD' => 'POST'
     'QUERY_STRING' => 'r=imeicheck%2Fcheck'
+<<<<<<< HEAD
     'REQUEST_URI' => '/fix-spider/frontend/web/index.php?r=imeicheck%2Fcheck'
     'SCRIPT_NAME' => '/fix-spider/frontend/web/index.php'
     'PHP_SELF' => '/fix-spider/frontend/web/index.php'
@@ -5443,10 +5594,41 @@ $_SERVER = [
     'MIBDIRS' => 'C:/xampp/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck%2Fcheck'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498120992.79
+    'REQUEST_TIME' => 1498120992
+]
+2017-06-22 12:06:44 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<<' (T_SL)' in D:\XAMPP\htdocs\oppoxspiderman\frontend\controllers\ImeicheckController.php:42
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-06-22 12:06:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'imeicheck/modal'
+]
+
+$_COOKIE = [
+    '_identity' => '379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf-backend' => 'c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"
+—Ï√≠≥JrçË◊»Æ‚ÂŸÒr≈e<ÛSœ˙Ü¿Ô3s\";}'
+    '_csrf-frontend' => '794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"r£ƒF»Õ$ ˛´9Øî8cí’∫ ùêï:É,ÈäÉ™x∫o\";}'
+    'advanced-backend' => 'hq7melkcjnnholobc9oku4p972'
+    'advanced-frontend' => 'd34gj7gg3buegjuct9svucjho7'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
@@ -5462,6 +5644,21 @@ $_SERVER = [
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+=======
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf-backend=c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%0A%D1%EC%C3%AD%B3Jr%8D%E8%D7%C8%AE%E2%E5%D9%F0%F1r%C5e%3C%F3S%CF%FA%86%03%C0%EF3s%22%3B%7D; _csrf-frontend=794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22r%A3%C4F%C8%CD%24%CA%FE%AB9%AF%948c%92%D5%BA+%9D%90%95%3A%83%2C%E9%8A%83%AAx%BAo%22%3B%7D; advanced-backend=hq7melkcjnnholobc9oku4p972; advanced-frontend=d34gj7gg3buegjuct9svucjho7; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\PuTTY\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\ADIT-DESKTOP\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ADIT-DESKTOP\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5469,6 +5666,7 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
     'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5533,10 +5731,61 @@ $_SERVER = [
     'MIBDIRS' => 'C:/xampp/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '53672'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=imeicheck/modal'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck/modal'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498126004.265
+    'REQUEST_TIME' => 1498126004
+]
+2017-06-22 12:08:36 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: imeicheck/modal' in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('modal', Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('imeicheck/modal', Array)
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\XAMPP\htdocs\oppoxspiderman\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\XAMPP\htdocs\oppoxspiderman\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-22 12:08:36 [::1][-][-][info][application] $_GET = [
+    'r' => 'imeicheck/modal'
+]
+
+$_COOKIE = [
+    '_identity' => '379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf-backend' => 'c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"
+—Ï√≠≥JrçË◊»Æ‚ÂŸÒr≈e<ÛSœ˙Ü¿Ô3s\";}'
+    '_csrf-frontend' => '794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"r£ƒF»Õ$ ˛´9Øî8cí’∫ ùêï:É,ÈäÉ™x∫o\";}'
+    'advanced-backend' => 'hq7melkcjnnholobc9oku4p972'
+    'advanced-frontend' => 'd34gj7gg3buegjuct9svucjho7'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
@@ -5552,6 +5801,22 @@ $_SERVER = [
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+=======
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf-backend=c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%0A%D1%EC%C3%AD%B3Jr%8D%E8%D7%C8%AE%E2%E5%D9%F0%F1r%C5e%3C%F3S%CF%FA%86%03%C0%EF3s%22%3B%7D; _csrf-frontend=794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22r%A3%C4F%C8%CD%24%CA%FE%AB9%AF%948c%92%D5%BA+%9D%90%95%3A%83%2C%E9%8A%83%AAx%BAo%22%3B%7D; advanced-backend=hq7melkcjnnholobc9oku4p972; advanced-frontend=d34gj7gg3buegjuct9svucjho7; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\PuTTY\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\ADIT-DESKTOP\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ADIT-DESKTOP\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5559,6 +5824,7 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
     'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5623,10 +5889,61 @@ $_SERVER = [
     'MIBDIRS' => 'C:/xampp/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '53717'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=imeicheck/modal'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck/modal'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498126116.91
+    'REQUEST_TIME' => 1498126116
+]
+2017-06-22 12:08:53 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: imeicheck/modal' in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('modal', Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('imeicheck/modal', Array)
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\XAMPP\htdocs\oppoxspiderman\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\XAMPP\htdocs\oppoxspiderman\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-22 12:08:53 [::1][-][-][info][application] $_GET = [
+    'r' => 'imeicheck/modal'
+]
+
+$_COOKIE = [
+    '_identity' => '379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf-backend' => 'c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"
+—Ï√≠≥JrçË◊»Æ‚ÂŸÒr≈e<ÛSœ˙Ü¿Ô3s\";}'
+    '_csrf-frontend' => '794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"r£ƒF»Õ$ ˛´9Øî8cí’∫ ùêï:É,ÈäÉ™x∫o\";}'
+    'advanced-backend' => 'hq7melkcjnnholobc9oku4p972'
+    'advanced-frontend' => 'd34gj7gg3buegjuct9svucjho7'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
@@ -5642,6 +5959,21 @@ $_SERVER = [
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+=======
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf-backend=c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%0A%D1%EC%C3%AD%B3Jr%8D%E8%D7%C8%AE%E2%E5%D9%F0%F1r%C5e%3C%F3S%CF%FA%86%03%C0%EF3s%22%3B%7D; _csrf-frontend=794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22r%A3%C4F%C8%CD%24%CA%FE%AB9%AF%948c%92%D5%BA+%9D%90%95%3A%83%2C%E9%8A%83%AAx%BAo%22%3B%7D; advanced-backend=hq7melkcjnnholobc9oku4p972; advanced-frontend=d34gj7gg3buegjuct9svucjho7; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\PuTTY\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\ADIT-DESKTOP\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ADIT-DESKTOP\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5649,6 +5981,7 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
     'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5713,10 +6046,61 @@ $_SERVER = [
     'MIBDIRS' => 'C:/xampp/php/extras/mibs'
     'MYSQL_HOME' => '\\xampp\\mysql\\bin'
     'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+=======
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '53726'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=imeicheck/modal'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck/modal'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498126133.48
+    'REQUEST_TIME' => 1498126133
+]
+2017-06-22 12:09:38 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: imeicheck/modal' in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('modal', Array)
+#1 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('imeicheck/modal', Array)
+#2 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\XAMPP\htdocs\oppoxspiderman\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\XAMPP\htdocs\oppoxspiderman\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\XAMPP\htdocs\oppoxspiderman\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-22 12:09:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'imeicheck/modal'
+]
+
+$_COOKIE = [
+    '_identity' => '379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_csrf-backend' => 'c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"
+—Ï√≠≥JrçË◊»Æ‚ÂŸÒr≈e<ÛSœ˙Ü¿Ô3s\";}'
+    '_csrf-frontend' => '794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"r£ƒF»Õ$ ˛´9Øî8cí’∫ ùêï:É,ÈäÉ™x∫o\";}'
+    'advanced-backend' => 'hq7melkcjnnholobc9oku4p972'
+    'advanced-frontend' => 'd34gj7gg3buegjuct9svucjho7'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/XAMPP/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/XAMPP/apache/bin/openssl.cnf'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
     'PHPRC' => '\\xampp\\php'
     'TMP' => '\\xampp\\tmp'
     'HTTP_HOST' => 'localhost'
+<<<<<<< HEAD
     'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0'
     'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
     'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
@@ -5732,6 +6116,22 @@ $_SERVER = [
     'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
     'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
     'WINDIR' => 'C:\\Windows'
+=======
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/oppoxspiderman/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_identity=379bc7de29c86b2ce381ae9c98780f2b5b02c2a89d0c515742efdbd01e7002e6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _csrf-backend=c22bdc5171da7b90992eedda90093574cb22041c97dc5eb9ec6b2f693e541bb9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%0A%D1%EC%C3%AD%B3Jr%8D%E8%D7%C8%AE%E2%E5%D9%F0%F1r%C5e%3C%F3S%CF%FA%86%03%C0%EF3s%22%3B%7D; _csrf-frontend=794cd2cdd7a7b7ed60c97d0cbfffac1d115a5c2624b88459cac42b842734f694a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22r%A3%C4F%C8%CD%24%CA%FE%AB9%AF%948c%92%D5%BA+%9D%90%95%3A%83%2C%E9%8A%83%AAx%BAo%22%3B%7D; advanced-backend=hq7melkcjnnholobc9oku4p972; advanced-frontend=d34gj7gg3buegjuct9svucjho7; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\PuTTY\\;D:\\XAMPP\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\ADIT-DESKTOP\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ADIT-DESKTOP\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
     'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
 '
     'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
@@ -5739,6 +6139,7 @@ $_SERVER = [
     'SERVER_ADDR' => '::1'
     'SERVER_PORT' => '80'
     'REMOTE_ADDR' => '::1'
+<<<<<<< HEAD
     'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
     'REQUEST_SCHEME' => 'http'
     'CONTEXT_PREFIX' => ''
@@ -5755,4 +6156,22 @@ $_SERVER = [
     'PHP_SELF' => '/fix-spider/frontend/web/index.php'
     'REQUEST_TIME_FLOAT' => 1498132844.045
     'REQUEST_TIME' => 1498132844
+=======
+    'DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/XAMPP/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/XAMPP/htdocs/oppoxspiderman/frontend/web/index.php'
+    'REMOTE_PORT' => '53738'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=imeicheck/modal'
+    'REQUEST_URI' => '/oppoxspiderman/frontend/web/index.php?r=imeicheck/modal'
+    'SCRIPT_NAME' => '/oppoxspiderman/frontend/web/index.php'
+    'PHP_SELF' => '/oppoxspiderman/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498126178.691
+    'REQUEST_TIME' => 1498126178
+>>>>>>> 90c2b6b413a4275ddad13212fcd5081516b3e211
 ]

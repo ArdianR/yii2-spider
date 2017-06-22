@@ -22,6 +22,11 @@ class ImeicheckController extends Controller
             ],
         ];
     }
+
+    public  function actionModal()
+    {
+       return $this->render('modal');
+    }
     public function actionCheck()
     {
         $model = new CheckForm();
@@ -96,3 +101,4 @@ class ImeicheckController extends Controller
         }
     }
 }
+
