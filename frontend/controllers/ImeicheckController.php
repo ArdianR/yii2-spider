@@ -34,17 +34,19 @@ class ImeicheckController extends Controller
             $session['imei'] = $imeicheck;
             //var_dump($imeicheck);exit();
             $checking = (new \yii\db\Query())
-                        ->select(['id_imei'])
+                        ->select('id_imei')
                         ->from('imei')
                         ->where(['imei1' => $imeicheck])
                         ->andwhere(['sold' => 1])
                         ->all();
 
-            $imeiattemp = (new \yii\db\Query())
+            
+
+            /*$imeiattemp = (new \yii\db\Query())
                             ->select(['*'])
                             ->from('detail_trans')
-                            ->where(['id_imei' => $checking[0]['id_imei']])
-                            ->all();
+                            ->where(['id_imei' => $checking['id_imei']])
+                            ->all();*/
 
             $checkware = (new\yii\db\Query())
                         ->select(['id_imei'])
@@ -55,7 +57,15 @@ class ImeicheckController extends Controller
             
             //print_r($checking[0]['id_imei']);exit();
             if(count($checking) == 1){
-                
+                $imeiattemp = (new \yii\db\Query())
+                            ->select(['*'])
+                            ->from('detail_trans')
+                            ->where(['id_imei' => $checking[0]['id_imei']])
+                            ->all();
+                $idimei = $checking[0]['id_imei'];
+                $session['idimei'] = $idimei;
+
+                //Check Imei sudah digunakan atau belum
                 if (count($imeiattemp) == 1) {
                     Yii::$app->session->setFlash('flashMessage', 'Maaf, IMEI yang kamu masukan sudah terpakai !');
                     return $this->render('check', [
