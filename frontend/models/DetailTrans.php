@@ -105,7 +105,7 @@ class DetailTrans extends \yii\db\ActiveRecord
             ->setFrom([$supportEmail => Yii::$app->params['siteName']])
             ->setTo($this->email)
             //->setSubject('Than you for wrote review on ' . Yii::$app->params['siteName'])
-            ->setSubject('Terimakasih atas partisipasinya!')
+            ->setSubject('OPPO F3. Terima Kasih Telah Berpartisipasi!')
             ->send();
         return $userSuccess;
     }

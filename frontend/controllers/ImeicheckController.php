@@ -39,18 +39,34 @@ class ImeicheckController extends Controller
                         ->where(['imei1' => $imeicheck])
                         ->andwhere(['sold' => 1])
                         ->all();
+<<<<<<< HEAD
             $imeiattemp = (new \yii\db\Query())
                             ->select(['*'])
                             ->from('detail_trans')
                             ->where(['id_imei' => $checking[0]['id_imei']])
                             ->all();
+=======
+            $checkware = (new\yii\db\Query())
+                        ->select(['id_imei'])
+                        ->from('imei')
+                        ->where(['imei1' => $imeicheck])
+                        ->andwhere(['warehouse' => 1])
+                        ->all();
+            
+>>>>>>> 288bc331b8d4c9511a1af37ae34019c6b1deeafb
             //print_r($checking[0]['id_imei']);exit();
             if(count($checking) == 1){
                 $idimei = $checking[0]['id_imei'];
                 $session['idimei'] = $idimei;
                 return $this->redirect(array('detailtrans/create/'));
-            }else{
-                Yii::$app->session->setFlash('flashMessage', 'Imei yang anda masukkan tidak terdaftar!');
+            }elseif (count($checkware) == 1){
+                 Yii::$app->session->setFlash('flashMessage', 'Maaf, IMEI yang kamu masukan tidak terdaftar sebagai OPPO F3 yang terjual. Silakan coba lagi dalam 2x24 Jam');
+                return $this->render('check', [
+                'model' => $model,
+            ]);
+            }
+            else{
+                Yii::$app->session->setFlash('flashMessage', 'Maaf, IMEI yang kamu masukan tidak terdaftar.');
                 return $this->render('check', [
                 'model' => $model,
             ]);
