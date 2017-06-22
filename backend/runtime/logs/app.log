@@ -9865,3 +9865,107 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1498065213.279
     'REQUEST_TIME' => 1498065213
 ]
+2017-06-22 05:45:34 [::1][1][h4qlk1died3nnq2t2std7v4j26][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\DetailTrans::id' in C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\db\BaseActiveRecord.php(285): yii\base\Component->__get('id')
+#1 C:\xampp\htdocs\fix-spider\backend\views\detailtrans\index.php(76): yii\db\BaseActiveRecord->__get('id')
+#2 [internal function]: yii\base\View->{closure}('/fix-spider/bac...', Object(app\models\DetailTrans), 3)
+#3 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\grid\ActionColumn.php(227): call_user_func(Object(Closure), '/fix-spider/bac...', Object(app\models\DetailTrans), 3)
+#4 [internal function]: yii\grid\ActionColumn->yii\grid\{closure}(Array)
+#5 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\grid\ActionColumn.php(231): preg_replace_callback('/\\{([\\w\\-\\/]+)\\...', Object(Closure), '{view} {update}...')
+#6 C:\xampp\htdocs\fix-spider\vendor\kartik-v\yii2-grid\ActionColumn.php(300): yii\grid\ActionColumn->renderDataCellContent(Object(app\models\DetailTrans), 3, 0)
+#7 C:\xampp\htdocs\fix-spider\vendor\kartik-v\yii2-grid\ActionColumn.php(217): kartik\grid\ActionColumn->renderDataCellContent(Object(app\models\DetailTrans), 3, 0)
+#8 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\grid\GridView.php(507): kartik\grid\ActionColumn->renderDataCell(Object(app\models\DetailTrans), 3, 0)
+#9 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\grid\GridView.php(476): yii\grid\GridView->renderTableRow(Object(app\models\DetailTrans), 3, 0)
+#10 C:\xampp\htdocs\fix-spider\vendor\kartik-v\yii2-grid\GridView.php(1000): yii\grid\GridView->renderTableBody()
+#11 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\grid\GridView.php(347): kartik\grid\GridView->renderTableBody()
+#12 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\widgets\BaseListView.php(159): yii\grid\GridView->renderItems()
+#13 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#14 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\widgets\BaseListView.php(134): yii\grid\GridView->renderSection('{items}')
+#15 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#16 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\widgets\BaseListView.php(137): preg_replace_callback('/{\\w+}/', Object(Closure), '<div class="pan...')
+#17 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#18 C:\xampp\htdocs\fix-spider\vendor\kartik-v\yii2-grid\GridView.php(971): yii\grid\GridView->run()
+#19 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Widget.php(139): kartik\grid\GridView->run()
+#20 C:\xampp\htdocs\fix-spider\vendor\kartik-v\yii2-dynagrid\DynaGrid.php(488): yii\base\Widget::widget(Array)
+#21 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Widget.php(109): kartik\dynagrid\DynaGrid->run()
+#22 C:\xampp\htdocs\fix-spider\backend\views\detailtrans\index.php(124): yii\base\Widget::end()
+#23 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#24 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#25 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\DetailtransController))
+#26 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(backend\controllers\DetailtransController))
+#27 C:\xampp\htdocs\fix-spider\backend\controllers\DetailtransController.php(44): yii\base\Controller->render('index', Array)
+#28 [internal function]: backend\controllers\DetailtransController->actionIndex()
+#29 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#30 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#31 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('', Array)
+#32 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('detailtrans', Array)
+#33 C:\xampp\htdocs\fix-spider\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#34 C:\xampp\htdocs\fix-spider\backend\web\index.php(17): yii\base\Application->run()
+#35 {main}
+2017-06-22 05:45:34 [::1][1][h4qlk1died3nnq2t2std7v4j26][info][application] $_GET = [
+    'r' => 'detailtrans'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'h4qlk1died3nnq2t2std7v4j26'
+    '_csrf-backend' => '97bfe8dcd46d38dc16fa1b64200a0bef337943a390f02e23c5b0b6f00b840ecea:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Zgx070oOu8E_pn74LWOy6ixOBfRn2OHm\";}'
+    'advanced-frontend' => 'mv6usqd98pvtjh1cpqtu27q8d2'
+    '_csrf-frontend' => '5955defecebdcdad27e36d9b64dcf2b473c4f444a50f5de61461efd4daaba9f3a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"csKU-rgijPPEkn2IErK2pIAcLd-ukKN4\";}'
+    '_identity-backend' => 'f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/fix-spider/backend/web/index.php'
+    '__id' => 1
+    'krajeeDGConfigSalt' => 'JÚÖÉtXørZBÎÉšN°ï½¾êOÁñr¿[’üßÿ`8'
+    'krajeeGridExportSalt' => 'Ú20»î‡ù£øvÅ’{R`ÇÖIúI¦¿*‘hØ>'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/fix-spider/backend/web/index.php?r=imei'
+    'HTTP_COOKIE' => 'advanced-backend=h4qlk1died3nnq2t2std7v4j26; _csrf-backend=97bfe8dcd46d38dc16fa1b64200a0bef337943a390f02e23c5b0b6f00b840ecea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22Zgx070oOu8E_pn74LWOy6ixOBfRn2OHm%22%3B%7D; advanced-frontend=mv6usqd98pvtjh1cpqtu27q8d2; _csrf-frontend=5955defecebdcdad27e36d9b64dcf2b473c4f444a50f5de61461efd4daaba9f3a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22csKU-rgijPPEkn2IErK2pIAcLd-ukKN4%22%3B%7D; _identity-backend=f42de906858b990330083bd7f013444c42dd4adc7d11e55abd53c62928f84915a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22fe6ewBhr9BL5LX5Yahj6Vl2TI9OJYz9D%22%2C2592000%5D%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php\\php.exe;C:\\Program Files (x86)\\Skype\\Phone\\;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/5.6.30'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/fix-spider/backend/web/index.php'
+    'REMOTE_PORT' => '49720'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=detailtrans'
+    'REQUEST_URI' => '/fix-spider/backend/web/index.php?r=detailtrans'
+    'SCRIPT_NAME' => '/fix-spider/backend/web/index.php'
+    'PHP_SELF' => '/fix-spider/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1498103134.36
+    'REQUEST_TIME' => 1498103134
+]

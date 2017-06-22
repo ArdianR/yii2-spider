@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use kartik\file\FileInput;
 use yii\web\Session;
+use himiklab\yii2\recaptcha;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\DetailTrans */
@@ -36,6 +37,8 @@ use yii\web\Session;
             'pluginOptions'=>['allowedFileExtensions'=>['jpg','gif','png']],
         ]); 
     ?>
+
+    <?= $form->field($model, 'reCaptcha')->widget(\himiklab\yii2\recaptcha\ReCaptcha::className()) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

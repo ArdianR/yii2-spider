@@ -6,6 +6,7 @@ use Yii;
 use yii\db\ActiveRecord;
 use yii\web\UploadedFile;
 use app\models\CustomerDetail;
+use himiklab\yii2\recaptcha;
 
 Yii::$app->params['uploadPath'] = Yii::$app->basePath . '/../uploads/';
 Yii::$app->params['uploadUrl'] = Yii::$app->urlManager->baseUrl . '/../uploads/';
@@ -34,6 +35,7 @@ class DetailTrans extends \yii\db\ActiveRecord
     public $image;
     public $name;
     public $email;
+    public $reCaptcha;
     /**
      * @inheritdoc
      */
@@ -60,6 +62,7 @@ class DetailTrans extends \yii\db\ActiveRecord
             [['path_src', 'path_web'], 'file', 'extensions'=>'jpg, gif, png'],
             [['path_src', 'path_web'], 'file', 'maxSize'=>'100000'],
             [['path_src', 'path_web'], 'string', 'max' => 255],
+            ['reCaptcha', \himiklab\yii2\recaptcha\ReCaptchaValidator::className(), 'secret' => '6LdCWCYUAAAAAC-eKYzWNGhq5kDDH0GFfDN3IGMw'],
         ];
     }
 
@@ -81,6 +84,7 @@ class DetailTrans extends \yii\db\ActiveRecord
             'stat_email1' => 'Stat Email1',
             'stat_email2' => 'Stat Email2',
             'created_at' => 'Created At',
+            'reCaptcha' => '',
         ];
     }
 	
