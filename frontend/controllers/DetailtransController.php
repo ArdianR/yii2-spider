@@ -153,7 +153,7 @@ class DetailtransController extends Controller
 
                         //Finish
                         Yii::$app->session->setFlash('flashMessage', 'Sukses, data anda benar!');
-                        return $this->redirect('thanks');
+                        return $this->render('thanks');
                     }
                 }
             }else{
