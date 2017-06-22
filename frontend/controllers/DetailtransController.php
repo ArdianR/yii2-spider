@@ -104,12 +104,12 @@ class DetailtransController extends Controller
                         ]);
                     }else{
                         //save
-                        //$image = $model->uploadImage();
+                        $image = $model->uploadImage();
                         //var_dump($model);exit();
-                        //$model->save();
+                        $model->save();
 
                         //Save Photo
-                        /*if ($image !== false) {
+                        if ($image !== false) {
                                 $path = $model->getImageFile();
                                 $image->saveAs($path);
                             }else{
@@ -117,7 +117,7 @@ class DetailtransController extends Controller
                                 return $this->render('create', [
                                     'model' => $model,
                                 ]);
-                            }*/
+                            }
 
                         //Send Email
                         /*Yii::$app->mailer->compose()
@@ -144,8 +144,8 @@ class DetailtransController extends Controller
                         ->send();*/
 
                         //Update status email
-                        //$connection = Yii::$app->db;
-                        //$connection->createCommand()->update('detail_trans', ['stat_email1' => 1], 'phone ='.$phone)->execute();
+                        $connection = Yii::$app->db;
+                        $connection->createCommand()->update('detail_trans', ['stat_email1' => 1], 'phone ='.$phone)->execute();
 
                         //Finish
                         Yii::$app->session->setFlash('flashMessage', 'Sukses, data anda benar!');

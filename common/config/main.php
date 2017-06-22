@@ -5,6 +5,13 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'reCaptcha' => [
+			'name' => 'reCaptcha',
+			'class' => 'himiklab\yii2\recaptcha\ReCaptcha',
+			'siteKey' => '6LdCWCYUAAAAAMyjQXtjM0RNWidgHAgJTjDY_GV9',
+			'secret' => '6LdCWCYUAAAAAC-eKYzWNGhq5kDDH0GFfDN3IGMw',
+			//secret => 6LeTXQgUAAAAALExcpzgCxWdnWjJcPDoMfK3oKGi
+		],
     ],
 	'modules' => [
 		'dynagrid'=>[

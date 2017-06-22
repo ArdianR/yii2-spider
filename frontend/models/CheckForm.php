@@ -14,6 +14,7 @@ class CheckForm extends \yii\base\Model
 	    return [
 	        // the name, email, subject and body attributes are required
 	        [['imeicheck'], 'required'],
+			['reCaptcha', \himiklab\yii2\recaptcha\ReCaptchaValidator::className(), 'secret' => '6LdCWCYUAAAAAC-eKYzWNGhq5kDDH0GFfDN3IGMw'],
 	    ];
 	}
 }

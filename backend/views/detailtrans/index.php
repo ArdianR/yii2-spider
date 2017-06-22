@@ -72,9 +72,9 @@ $columns = [
 		//				return Url::to([$action,'id'=>$key]);
 		//				},
 		'buttons'=>[
-        //'approve' => function ($url, $model, $key) {
-		//		return Html::a('<span class="glyphicon glyphicon-copy"></span>', ['approve', 'id'=>$model->id],['title'=>'Approve']);
-		//		},
+        'approve' => function ($url, $model, $key) {
+				return Html::a('<span class="glyphicon glyphicon-copy"></span>', ['approve', 'id'=>$model->id_trans],['title'=>'Approve']);
+				},
 		'viewOptions'=>['role'=>'modal-remote','title'=>'View','data-toggle'=>'tooltip'],
 		'updateOptions'=>['role'=>'modal-remote','title'=>'Update', 'data-toggle'=>'tooltip'],
 		'deleteOptions'=>['role'=>'modal-remote','title'=>'Delete', 
