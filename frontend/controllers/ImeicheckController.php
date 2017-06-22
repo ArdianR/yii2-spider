@@ -39,7 +39,11 @@ class ImeicheckController extends Controller
                         ->where(['imei1' => $imeicheck])
                         ->andwhere(['sold' => 1])
                         ->all();
-            
+            $imeiattemp = (new \yii\db\Query())
+                            ->select(['*'])
+                            ->from('detail_trans')
+                            ->where(['id_imei' => $checking[0]['id_imei']])
+                            ->all();
             //print_r($checking[0]['id_imei']);exit();
             if(count($checking) == 1){
                 $idimei = $checking[0]['id_imei'];

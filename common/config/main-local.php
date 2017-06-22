@@ -2,17 +2,17 @@
 return [
     'components' => [
         'db' => [
-            /*'class' => 'yii\db\Connection',
+            'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=54.179.131.7;dbname=oppoit_spiderman',
             'username' => 'oppoit_spiderman',
             'password' => 'atQ7wML84t',
-            'charset' => 'utf8',*/
+            'charset' => 'utf8',
 			
-			'class' => 'yii\db\Connection',
+			/*'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=spiderman',
             'username' => 'root',
             'password' => '',
-            'charset' => 'utf8',
+            'charset' => 'utf8',*/
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
