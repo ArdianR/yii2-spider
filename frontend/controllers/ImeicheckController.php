@@ -22,6 +22,11 @@ class ImeicheckController extends Controller
             ],
         ];
     }
+
+    public  function actionModal()
+    {
+       return $this->render('modal');
+    }
     public function actionCheck()
     {
         $model = new CheckForm();
@@ -39,21 +44,13 @@ class ImeicheckController extends Controller
                         ->where(['imei1' => $imeicheck])
                         ->andwhere(['sold' => 1])
                         ->all();
-<<<<<<< HEAD
-/*
-=======
 
->>>>>>> 345de18b5e68301f7cdf10910c55a1352c2f43db
             $imeiattemp = (new \yii\db\Query())
                             ->select(['*'])
                             ->from('detail_trans')
                             ->where(['id_imei' => $checking[0]['id_imei']])
                             ->all();
-<<<<<<< HEAD
-*/
-=======
 
->>>>>>> 345de18b5e68301f7cdf10910c55a1352c2f43db
             $checkware = (new\yii\db\Query())
                         ->select(['id_imei'])
                         ->from('imei')
@@ -94,3 +91,4 @@ class ImeicheckController extends Controller
         }
     }
 }
+

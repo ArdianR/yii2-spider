@@ -61,6 +61,10 @@ class DetailtransController extends Controller
         ]);
     }
 
+    public  function actionThanks()
+    {
+       return $this->render('thanks');
+    }
     /**
      * Creates a new DetailTrans model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -149,7 +153,7 @@ class DetailtransController extends Controller
 
                         //Finish
                         Yii::$app->session->setFlash('flashMessage', 'Sukses, data anda benar!');
-                        return $this->redirect('thank');
+                        return $this->redirect('thanks');
                     }
                 }
             }else{
