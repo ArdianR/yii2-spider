@@ -1316,7 +1316,7 @@ HTML;
                 'showPageSummary' => true,
                 'showFooter' => true,
                 'showCaption' => true,
-                'filename' => Yii::t('kvgrid', 'grid-export'),
+                'filename' => Yii::t('kvgrid', 'ExportParticipant-OPPOxSpiderman'),
                 'alertMsg' => Yii::t('kvgrid', 'The EXCEL export file will be generated for download.'),
                 'options' => ['title' => Yii::t('kvgrid', 'Microsoft Excel 95+')],
                 'mime' => 'application/vnd.ms-excel',

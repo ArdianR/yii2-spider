@@ -61,6 +61,10 @@ class DetailtransController extends Controller
         ]);
     }
 
+    public  function actionThanks()
+    {
+       return $this->render('thanks');
+    }
     /**
      * Creates a new DetailTrans model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -94,22 +98,22 @@ class DetailtransController extends Controller
                             ->select(['*'])
                             ->from('detail_trans')
                             ->where(['id_imei' => $session['idimei']])
-                            ->orwhere(['phone' => $phone])
+                            ->andwhere(['phone' => $phone])
                             ->all();
 
                     if(count($imeiattemp) == 1 ){
-                        Yii::$app->session->setFlash('flashMessage', 'Imei atau nomor hp yang anda masukkan sudah ada!');
+                        Yii::$app->session->setFlash('flashMessage', 'Maaf, IMEI yang kamu masukan sudah terpakai');
                         return $this->render('create', [
                             'model' => $model,
                         ]);
                     }else{
                         //save
-                        //$image = $model->uploadImage();
+                        $image = $model->uploadImage();
                         //var_dump($model);exit();
-                        //$model->save();
+                        $model->save();
 
                         //Save Photo
-                        /*if ($image !== false) {
+                        if ($image !== false) {
                                 $path = $model->getImageFile();
                                 $image->saveAs($path);
                             }else{
@@ -117,7 +121,7 @@ class DetailtransController extends Controller
                                 return $this->render('create', [
                                     'model' => $model,
                                 ]);
-                            }*/
+                            }
 
                         //Send Email
                         /*Yii::$app->mailer->compose()
@@ -144,16 +148,16 @@ class DetailtransController extends Controller
                         ->send();*/
 
                         //Update status email
-                        //$connection = Yii::$app->db;
-                        //$connection->createCommand()->update('detail_trans', ['stat_email1' => 1], 'phone ='.$phone)->execute();
+                        $connection = Yii::$app->db;
+                        $connection->createCommand()->update('detail_trans', ['stat_email1' => 1], 'phone ='.$phone)->execute();
 
                         //Finish
                         Yii::$app->session->setFlash('flashMessage', 'Sukses, data anda benar!');
-                        return $this->redirect('thank');
+                        return $this->render('thanks');
                     }
                 }
             }else{
-                Yii::$app->session->setFlash('flashMessage', 'Nomor hp yang anda masukkan salah!');
+                Yii::$app->session->setFlash('flashMessage', 'Format nomer salah. Contoh 08xxxxxxxx');
                 return $this->render('create', [
                     'model' => $model,
                 ]);

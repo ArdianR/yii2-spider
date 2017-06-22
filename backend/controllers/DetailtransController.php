@@ -74,6 +74,29 @@ class DetailtransController extends Controller
         }
     }
 
+    public function actionApprove($id)
+    {
+        $model = $this->findModel($id);
+
+        $searchModel = new DetailTransSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+            //Update status email
+            $connection = Yii::$app->db;
+            $connection->createCommand()->update('detail_trans', ['status' => 2], 'id_trans ='.$id)->execute();
+
+            //Send Email
+            /*if ($model->sendEmail(Yii::$app->params['supportEmail'])) {
+                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+            } else {
+                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
+            }*/
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+    }
+
     /**
      * Updates an existing DetailTrans model.
      * If update is successful, the browser will be redirected to the 'view' page.

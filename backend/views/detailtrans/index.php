@@ -23,11 +23,12 @@ $this->params['breadcrumbs'][] = $this->title;
 $columns = [
     ['class'=>'kartik\grid\SerialColumn', 'order'=>DynaGrid::ORDER_FIX_LEFT],
     'id_trans',
+    'id_imei',
     'name',
     'address',
     'phone',
     'email:email',
-    'path_src',
+    //'path_src',
     /*[
         'attribute'=>'publish_date',
         'filterType'=>GridView::FILTER_DATE,
@@ -37,7 +38,7 @@ $columns = [
             'pluginOptions'=>['format'=>'yyyy-mm-dd']
         ],
     ],*/
-    [
+    /*[
         'attribute' => 'path_web',
         'format' => 'html',
         'label' => 'Photo',
@@ -45,8 +46,9 @@ $columns = [
             return Html::img('../../uploads/' . $data['path_web'],
                 ['width' => '60px']);
         },        
-    ],
+    ],*/
     //'created_at',
+    'status',
 	[
         'attribute'=>'created_at',
         'filterType'=>GridView::FILTER_DATE,
@@ -56,7 +58,6 @@ $columns = [
             'pluginOptions'=>['format'=>'yyyy-mm-dd']
         ],
 	],
-	
     /*[
         'class'=>'kartik\grid\BooleanColumn',
         'attribute'=>'status',
@@ -72,9 +73,9 @@ $columns = [
 		//				return Url::to([$action,'id'=>$key]);
 		//				},
 		'buttons'=>[
-        //'approve' => function ($url, $model, $key) {
-		//		return Html::a('<span class="glyphicon glyphicon-copy"></span>', ['approve', 'id'=>$model->id],['title'=>'Approve']);
-		//		},
+        'approve' => function ($url, $model, $key) {
+				return Html::a('<span class="glyphicon glyphicon-copy"></span>', ['approve', 'id'=>$model->id_trans],['title'=>'Approve']);
+				},
 		'viewOptions'=>['role'=>'modal-remote','title'=>'View','data-toggle'=>'tooltip'],
 		'updateOptions'=>['role'=>'modal-remote','title'=>'Update', 'data-toggle'=>'tooltip'],
 		'deleteOptions'=>['role'=>'modal-remote','title'=>'Delete', 
