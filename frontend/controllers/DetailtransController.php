@@ -98,7 +98,7 @@ class DetailtransController extends Controller
                             ->all();
 
                     if(count($imeiattemp) == 1 ){
-                        Yii::$app->session->setFlash('flashMessage', 'Imei atau nomor hp yang anda masukkan sudah ada!');
+                        Yii::$app->session->setFlash('flashMessage', 'Maaf, IMEI yang kamu masukan sudah terpakai');
                         return $this->render('create', [
                             'model' => $model,
                         ]);
@@ -153,7 +153,7 @@ class DetailtransController extends Controller
                     }
                 }
             }else{
-                Yii::$app->session->setFlash('flashMessage', 'Nomor hp yang anda masukkan salah!');
+                Yii::$app->session->setFlash('flashMessage', 'Format nomer salah. Contoh 08xxxxxxxx');
                 return $this->render('create', [
                     'model' => $model,
                 ]);

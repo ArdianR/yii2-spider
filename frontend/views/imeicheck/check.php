@@ -14,7 +14,7 @@ $form = ActiveForm::begin([
 
 ?>
 	<?php echo $form->errorSummary($model); ?>
-    <?= $form->field($model, 'imeicheck')->textInput(['maxlength' => true, 'type' => 'number'])->hint('Diisi dengan 15 angka IMEI anda') ?>
+    <?= $form->field($model, 'imeicheck')->textInput(['maxlength' => true, 'type' => 'number'])->hint('Masukan IMEI 1 OPPO F3 kamu <br> Tips: lihat nomer IMEI 1 kamu di belakang box pembelian OPPO F3 atau tekan*#06# di OPPO F3') ?>
 
     <div class="form-group">
         <div class="col-lg-offset-1 col-lg-11">
