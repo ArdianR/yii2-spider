@@ -27,7 +27,7 @@ $columns = [
     'address',
     'phone',
     'email:email',
-    'path_src',
+    //'path_src',
     /*[
         'attribute'=>'publish_date',
         'filterType'=>GridView::FILTER_DATE,
@@ -37,7 +37,7 @@ $columns = [
             'pluginOptions'=>['format'=>'yyyy-mm-dd']
         ],
     ],*/
-    [
+    /*[
         'attribute' => 'path_web',
         'format' => 'html',
         'label' => 'Photo',
@@ -45,8 +45,9 @@ $columns = [
             return Html::img('../../uploads/' . $data['path_web'],
                 ['width' => '60px']);
         },        
-    ],
+    ],*/
     //'created_at',
+    'status',
 	[
         'attribute'=>'created_at',
         'filterType'=>GridView::FILTER_DATE,
@@ -56,7 +57,6 @@ $columns = [
             'pluginOptions'=>['format'=>'yyyy-mm-dd']
         ],
 	],
-	
     /*[
         'class'=>'kartik\grid\BooleanColumn',
         'attribute'=>'status',

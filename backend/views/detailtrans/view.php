@@ -23,6 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+        
         <?= Html::a('Approve', ['approve', 'id' => $model->id_trans], ['class' => 'btn btn-success']) ?>
     </p>
 
@@ -52,5 +53,6 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ],
     ]) ?>
+
 
 </div>

@@ -33,8 +33,6 @@ Yii::$app->params['uploadUrl'] = Yii::$app->urlManager->baseUrl . '/../uploads/'
 class DetailTrans extends \yii\db\ActiveRecord
 {
     public $image;
-    public $name;
-    public $email;
     public $reCaptcha;
     /**
      * @inheritdoc
