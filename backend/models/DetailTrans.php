@@ -94,6 +94,28 @@ class DetailTrans extends \yii\db\ActiveRecord
         return $userSuccess;
     }
 
+    public function sendEmail2($supportEmail,$name,$mail)
+    {
+        $userSuccess = Yii::$app
+            ->mailer
+            ->compose(
+                ['html' => 'newsletter/email2.php'],
+                //['html' => 'userFeedback-html', 'text' => 'userFeedback-text'],
+                [
+                    'imagebg' => Yii::getAlias('@common/mail/newsletter/image/bgnewsletter.jpg'),
+                    'email' => $mail,
+                    'name'  => $name,
+                    'supportEmail' => $supportEmail,
+                ]
+            )
+            ->setFrom([$supportEmail => Yii::$app->params['siteName']])
+            ->setTo($this->email)
+            //->setSubject('Than you for wrote review on ' . Yii::$app->params['siteName'])
+            ->setSubject('OPPO F3. Terima Kasih Telah Berpartisipasi!')
+            ->send();
+        return $userSuccess;
+    }
+
     /**
      * @return \yii\db\ActiveQuery
      */

@@ -81,16 +81,26 @@ class DetailtransController extends Controller
         $searchModel = new DetailTransSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+        $getforsend = (new \yii\db\Query())
+                        ->select('*')
+                        ->from('detail_trans')
+                        ->where(['id_trans' => $id])
+                        ->all();
+        $nama = $getforsend[0]['name'];
+        $mail = $getforsend[0]['email'];
+
+            
             //Update status email
             $connection = Yii::$app->db;
             $connection->createCommand()->update('detail_trans', ['status' => 2], 'id_trans ='.$id)->execute();
 
+
             //Send Email
-            /*if ($model->sendEmail(Yii::$app->params['supportEmail'])) {
+            if ($model->sendEmail2(Yii::$app->params['supportEmail'],$nama, $mail)) {
                 Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
             } else {
                 Yii::$app->session->setFlash('error', 'There was an error sending your message.');
-            }*/
+            }
             return $this->render('index', [
                 'searchModel' => $searchModel,
                 'dataProvider' => $dataProvider,
