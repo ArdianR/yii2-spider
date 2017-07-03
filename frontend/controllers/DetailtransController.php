@@ -101,8 +101,8 @@ class DetailtransController extends Controller
                             ->andwhere(['phone' => $phone])
                             ->all();
 
-                    if(count($imeiattemp) == 1 ){
-                        Yii::$app->session->setFlash('flashMessage', 'Maaf, IMEI yang kamu masukan sudah terpakai');
+                    if(count($imeiattemp) != 0){
+                        Yii::$app->session->setFlash('flashMessage', 'Maaf, IMEI atau noomo hp yang kamu masukan sudah terpakai');
                         return $this->render('create', [
                             'model' => $model,
                         ]);
